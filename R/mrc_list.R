@@ -9,8 +9,7 @@
 #'   testthat::expect_true("dependencies" %in% names(df))
 #'   testthat::expect_true("description" %in% names(df))
 #' @export
-mrc_list <- function()
-{
+mrc_list <- function() {
   # java -cp beast.jar beast.util.PackageManager -list
   raw <- system2(
     command = "java",
@@ -29,10 +28,13 @@ mrc_list <- function()
   )
   df <- as.data.frame(df)
 
-  colnames(df) <- c("name", "installed_version", "latest_version", "dependencies", "description")
+  colnames(df) <- c(
+    "name", "installed_version", "latest_version",
+    "dependencies", "description"
+  )
   names(df) <- colnames(df)
   for (col in seq_along(colnames(df))) {
-    df[ , col] <- stringr::str_trim(df[ , col])
+    df[, col] <- stringr::str_trim(df[, col])
   }
   df
 }

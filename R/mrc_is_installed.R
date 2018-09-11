@@ -4,5 +4,5 @@
 #' @export
 mrc_is_installed <- function(name) {
   df <- mrc_list()
-  df[ df$name == name, ]$installed_version != "NA"
+  df[df$name == name, ]$installed_version != "NA"
 }
