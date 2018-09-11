@@ -17,7 +17,13 @@ list_beast2_packages <- function()
   )
   raw <- raw[c(-1, -2, -4)]
 
-  df <- stringr::str_split(raw, pattern = "\\|", n = 5, simplify = TRUE)
+  df <- stringr::str_split(
+    raw, pattern = "\\|", n = 5, simplify = TRUE
+  )
+
   colnames(df) <- c("name", "installed_version", "latest_version", "dependencies", "description")
+  for (col in seq_along(colnames(df))) {
+    df[ , col] <- stringr::str_trim(df[ , col])
+  }
   df
 }

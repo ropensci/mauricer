@@ -19,5 +19,11 @@ knitr::opts_chunk$set(
 
 ```{r}
 library(mauricer)
+```
+
+List all BEAST2 packages:
+
+```{r}
 knitr::kable(list_beast2_packages())
 ```
+
