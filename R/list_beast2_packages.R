@@ -1,6 +1,13 @@
 #' List all BEAST2 packages available and installed
 #' @return a data frame
 #' @author Richel J.C. Bilderbeek
+#' @examples
+#'   df <- list_beast2_packages()
+#'   testthat::expect_true("name" %in% names(df))
+#'   testthat::expect_true("installed_version" %in% names(df))
+#'   testthat::expect_true("latest_version" %in% names(df))
+#'   testthat::expect_true("dependencies" %in% names(df))
+#'   testthat::expect_true("description" %in% names(df))
 #' @export
 list_beast2_packages <- function()
 {
