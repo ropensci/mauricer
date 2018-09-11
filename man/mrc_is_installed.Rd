@@ -9,6 +9,9 @@ mrc_is_installed(name)
 \arguments{
 \item{name}{BEAST2 package name}
 }
+\value{
+TRUE if the BEAST2 package is installed
+}
 \description{
 Checks if a BEAST2 package is already installed
 }
