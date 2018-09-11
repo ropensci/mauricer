@@ -19,11 +19,53 @@ knitr::opts_chunk$set(
 
 ```{r}
 library(mauricer)
+library(testthat)
 ```
 
 List all BEAST2 packages:
 
 ```{r}
-knitr::kable(list_beast2_packages())
+beast2_packages <- list_beast2_packages() 
+knitr::kable(head(beast2_packages))
 ```
 
+Find a package that is not installed:
+
+```{r}
+first_absent_package_name <- beast2_packages[ 
+  beast2_packages$installed_version == "NA", 
+]$name[1]
+print(first_absent_package_name)
+```
+
+Install that package:
+
+```{r}
+install_beast2_package(first_absent_package_name)
+```
+
+Should not be the first absent package anymore:
+
+```{r}
+beast2_packages <- list_beast2_packages() 
+new_first_absent_package_name <- beast2_packages[ 
+  beast2_packages$installed_version == "NA", 
+]$name[1]
+expect_true(new_first_absent_package_name != first_absent_package_name)
+```
+
+Uninstall that package:
+
+```{r}
+uninstall_beast2_package(first_absent_package_name)
+```
+
+Should be the first absent package again:
+
+```{r}
+beast2_packages <- list_beast2_packages() 
+last_first_absent_package_name <- beast2_packages[ 
+  beast2_packages$installed_version == "NA", 
+]$name[1]
+expect_true(last_first_absent_package_name == first_absent_package_name)
+```

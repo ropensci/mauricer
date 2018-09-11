@@ -74,7 +74,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 
 
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mauricer)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mauricer)</code></pre></div>
+<p>List all BEAST2 packages:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">beast2_packages &lt;-<span class="st"> </span><span class="kw">list_beast2_packages</span>() 
 knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">list_beast2_packages</span>())</code></pre></div>
 <table>
 <thead>
@@ -88,54 +90,284 @@ knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">li
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Name</td>
-<td align="left">Installed Version</td>
-<td align="left">Latest Version</td>
-<td align="left">Dependencies</td>
-<td align="left">Description</td>
+<td align="left">BEAST</td>
+<td align="left">2.5.0</td>
+<td align="left">2.5.0</td>
+<td align="left"></td>
+<td align="left">BEAST core</td>
+</tr>
+<tr class="even">
+<td align="left">bacter</td>
+<td align="left">NA</td>
+<td align="left">2.2.0</td>
+<td align="left"></td>
+<td align="left">Bacterial ARG inference.</td>
+</tr>
+<tr class="odd">
+<td align="left">BADTRIP</td>
+<td align="left">NA</td>
+<td align="left">1.0.0</td>
+<td align="left"></td>
+<td align="left">Infer transmission time for non-haplotype data and epi data</td>
+</tr>
+<tr class="even">
+<td align="left">BASTA</td>
+<td align="left">NA</td>
+<td align="left">3.0.1</td>
+<td align="left"></td>
+<td align="left">Bayesian structured coalescent approximation</td>
+</tr>
+<tr class="odd">
+<td align="left">bdmm</td>
+<td align="left">NA</td>
+<td align="left">0.3.1</td>
+<td align="left">MASTER, MultiTypeTree</td>
+<td align="left">pre-release of multitype birth-death model (aka birth-death-migration model)</td>
+</tr>
+<tr class="even">
+<td align="left">BDSKY</td>
+<td align="left">NA</td>
+<td align="left">1.4.1</td>
+<td align="left"></td>
+<td align="left">birth death skyline - handles serially sampled tips, piecewise constant rate changes through time and sampled ancestors</td>
+</tr>
+<tr class="odd">
+<td align="left">BEAST_CLASSIC</td>
+<td align="left">NA</td>
+<td align="left">1.4.0</td>
+<td align="left">BEASTLabs</td>
+<td align="left">BEAST classes ported from BEAST 1 in wrappers</td>
+</tr>
+<tr class="even">
+<td align="left">BEASTLabs</td>
+<td align="left">1.8.0</td>
+<td align="left">1.8.0</td>
+<td align="left"></td>
+<td align="left">BEAST utilities, such as Script, multi monophyletic constraints</td>
+</tr>
+<tr class="odd">
+<td align="left">BEASTShell</td>
+<td align="left">NA</td>
+<td align="left">1.4.0</td>
+<td align="left"></td>
+<td align="left">BEAST Shell - BeanShell scripting for BEAST</td>
+</tr>
+<tr class="even">
+<td align="left">BEASTvntr</td>
+<td align="left">NA</td>
+<td align="left">0.1.2</td>
+<td align="left"></td>
+<td align="left">Variable Number of Tandem Repeat data, such as microsattelites</td>
+</tr>
+<tr class="odd">
+<td align="left">bModelTest</td>
+<td align="left">NA</td>
+<td align="left">1.1.0</td>
+<td align="left">BEASTLabs</td>
+<td align="left">Bayesian model test for nucleotide subst models, gamma rate heterogeneity and invariant sites</td>
+</tr>
+<tr class="even">
+<td align="left">BREAK_AWAY</td>
+<td align="left">NA</td>
+<td align="left">1.0.0</td>
+<td align="left">BEASTLabs, GEO_SPHERE</td>
+<td align="left">break-away model of phylogegraphy</td>
+</tr>
+<tr class="odd">
+<td align="left">CA</td>
+<td align="left">NA</td>
+<td align="left">1.3.0</td>
+<td align="left"></td>
+<td align="left">CladeAge a package for fossil calibrations</td>
+</tr>
+<tr class="even">
+<td align="left">CodonSubstModels</td>
+<td align="left">NA</td>
+<td align="left">1.1.0</td>
+<td align="left"></td>
+<td align="left">Codon substitution models</td>
+</tr>
+<tr class="odd">
+<td align="left">DENIM</td>
+<td align="left">NA</td>
+<td align="left">0.3.1</td>
+<td align="left"></td>
+<td align="left">Divergence Estimation Notwithstanding ILS and Migration</td>
+</tr>
+<tr class="even">
+<td align="left">EpiInf</td>
+<td align="left">NA</td>
+<td align="left">7.0.2</td>
+<td align="left">SA</td>
+<td align="left">BD/SIR/SIS epidemic trajectory inference.</td>
+</tr>
+<tr class="odd">
+<td align="left">FLC</td>
+<td align="left">NA</td>
+<td align="left">1.0.0</td>
+<td align="left"></td>
+<td align="left">Flexible local clock model</td>
+</tr>
+<tr class="even">
+<td align="left">GEO_SPHERE</td>
+<td align="left">NA</td>
+<td align="left">1.2.0</td>
+<td align="left">BEASTLabs</td>
+<td align="left">Whole world phylogeography</td>
+</tr>
+<tr class="odd">
+<td align="left">Mascot</td>
+<td align="left">NA</td>
+<td align="left">1.1.1</td>
+<td align="left"></td>
+<td align="left">Marginal approximation of the structured coalescent</td>
+</tr>
+<tr class="even">
+<td align="left">MASTER</td>
+<td align="left">NA</td>
+<td align="left">6.0.0</td>
+<td align="left"></td>
+<td align="left">Stochastic population dynamics simulation</td>
+</tr>
+<tr class="odd">
+<td align="left">MGSM</td>
+<td align="left">NA</td>
+<td align="left">0.3.0</td>
+<td align="left"></td>
+<td align="left">Multi-gamma and relaxed gamma site models</td>
+</tr>
+<tr class="even">
+<td align="left">MM</td>
+<td align="left">NA</td>
+<td align="left">1.1.1</td>
+<td align="left"></td>
+<td align="left">Enables models of morphological chatacter evolution</td>
+</tr>
+<tr class="odd">
+<td align="left">MODEL_SELECTION</td>
+<td align="left">1.4.1</td>
+<td align="left">1.4.1</td>
+<td align="left">BEASTLabs</td>
+<td align="left">Select models through path sampling/stepping stone analysis</td>
+</tr>
+<tr class="even">
+<td align="left">MultiTypeTree</td>
+<td align="left">NA</td>
+<td align="left">7.0.0</td>
+<td align="left"></td>
+<td align="left">Structured coalescent inference</td>
+</tr>
+<tr class="odd">
+<td align="left">NS</td>
+<td align="left">1.0.1</td>
+<td align="left">1.0.1</td>
+<td align="left">MODEL_SELECTION, BEASTLabs</td>
+<td align="left">Nested sampling for model selection and posterior inference</td>
+</tr>
+<tr class="even">
+<td align="left">PhyDyn</td>
+<td align="left">NA</td>
+<td align="left">1.3.0</td>
+<td align="left"></td>
+<td align="left">PhyDyn: Epidemiological modelling with BEAST</td>
+</tr>
+<tr class="odd">
+<td align="left">phylodynamics</td>
+<td align="left">NA</td>
+<td align="left">1.3.0</td>
+<td align="left">BDSKY</td>
+<td align="left">BDSIR and Stochastic Coalescent</td>
+</tr>
+<tr class="even">
+<td align="left">PoMo</td>
+<td align="left">NA</td>
+<td align="left">1.0.1</td>
+<td align="left"></td>
+<td align="left">PoMo, a substitution model that separates mutation and drift processes</td>
+</tr>
+<tr class="odd">
+<td align="left">RBS</td>
+<td align="left">NA</td>
+<td align="left">1.4.0</td>
+<td align="left"></td>
+<td align="left">Reversible-jump Based substitution model</td>
+</tr>
+<tr class="even">
+<td align="left">SA</td>
+<td align="left">NA</td>
+<td align="left">2.0.0</td>
+<td align="left">BEASTLabs</td>
+<td align="left">Sampled ancestor trees</td>
+</tr>
+<tr class="odd">
+<td align="left">SCOTTI</td>
+<td align="left">NA</td>
+<td align="left">2.0.1</td>
+<td align="left"></td>
+<td align="left">Structured COalescent Transmission Tree Inference</td>
+</tr>
+<tr class="even">
+<td align="left">SNAPP</td>
+<td align="left">NA</td>
+<td align="left">1.4.1</td>
+<td align="left"></td>
+<td align="left">SNP and AFLP Phylogenies</td>
+</tr>
+<tr class="odd">
+<td align="left">SpeciesNetwork</td>
+<td align="left">NA</td>
+<td align="left">0.12.2</td>
+<td align="left"></td>
+<td align="left">Multispecies network coalescent (MSNC) inference of introgression and hybridization</td>
+</tr>
+<tr class="even">
+<td align="left">SSM</td>
+<td align="left">NA</td>
+<td align="left">1.1.0</td>
+<td align="left"></td>
+<td align="left">Standard Nucleotide Substitution Models</td>
+</tr>
+<tr class="odd">
+<td align="left">STACEY</td>
+<td align="left">NA</td>
+<td align="left">1.2.4</td>
+<td align="left"></td>
+<td align="left">Species delimitation and species tree estimation</td>
+</tr>
+<tr class="even">
+<td align="left">StarBEAST2</td>
+<td align="left">NA</td>
+<td align="left">0.15.1</td>
+<td align="left">MM, SA</td>
+<td align="left">Multispecies coalescent inference using multi-locus and fossil data</td>
+</tr>
+<tr class="odd">
+<td align="left">substBMA</td>
+<td align="left">NA</td>
+<td align="left">1.2.2</td>
+<td align="left"></td>
+<td align="left">Substitution Bayesian Model Averaging</td>
+</tr>
+<tr class="even">
+<td align="left">TMA</td>
+<td align="left">NA</td>
+<td align="left">1.0.0</td>
+<td align="left">MASTER, BEASTLabs, phylodynamics, TreeStat2, BDSKY</td>
+<td align="left">Tree model adequacy: test whether the tree prior used is adequate for your data</td>
+</tr>
+<tr class="odd">
+<td align="left">TreeStat2</td>
+<td align="left">NA</td>
+<td align="left">0.0.2</td>
+<td align="left"></td>
+<td align="left">Utility for calculating tree statistics from tree log file</td>
 </tr>
 </tbody>
 </table>
-<div id="beast-2.5.0-2.5.0-beast-core" class="section level2">
-<h2>BEAST 2.5.0 2.5.0 BEAST core</h2>
-<p>bacter NA 2.2.0 Bacterial ARG inference.<br />
-BADTRIP NA 1.0.0 Infer transmission time for non-haplotype data and epi data<br />
-BASTA NA 3.0.1 Bayesian structured coalescent approximation<br />
-bdmm NA 0.3.1 MASTER, MultiTypeTree pre-release of multitype birth-death model (aka birth-death-migration model)<br />
-BDSKY NA 1.4.1 birth death skyline - handles serially sampled tips, piecewise constant rate changes through time and sampled ancestors BEAST_CLASSIC NA 1.4.0 BEASTLabs BEAST classes ported from BEAST 1 in wrappers<br />
-BEASTLabs 1.8.0 1.8.0 BEAST utilities, such as Script, multi monophyletic constraints<br />
-BEASTShell NA 1.4.0 BEAST Shell - BeanShell scripting for BEAST<br />
-BEASTvntr NA 0.1.2 Variable Number of Tandem Repeat data, such as microsattelites<br />
-bModelTest NA 1.1.0 BEASTLabs Bayesian model test for nucleotide subst models, gamma rate heterogeneity and invariant sites<br />
-BREAK_AWAY NA 1.0.0 BEASTLabs, GEO_SPHERE break-away model of phylogegraphy<br />
-CA NA 1.3.0 CladeAge a package for fossil calibrations<br />
-CodonSubstModels NA 1.1.0 Codon substitution models<br />
-DENIM NA 0.3.1 Divergence Estimation Notwithstanding ILS and Migration<br />
-EpiInf NA 7.0.2 SA BD/SIR/SIS epidemic trajectory inference.<br />
-FLC NA 1.0.0 Flexible local clock model<br />
-GEO_SPHERE NA 1.2.0 BEASTLabs Whole world phylogeography<br />
-Mascot NA 1.1.1 Marginal approximation of the structured coalescent<br />
-MASTER NA 6.0.0 Stochastic population dynamics simulation<br />
-MGSM NA 0.3.0 Multi-gamma and relaxed gamma site models<br />
-MM NA 1.1.1 Enables models of morphological chatacter evolution<br />
-MODEL_SELECTION 1.4.1 1.4.1 BEASTLabs Select models through path sampling/stepping stone analysis<br />
-MultiTypeTree NA 7.0.0 Structured coalescent inference<br />
-NS 1.0.1 1.0.1 MODEL_SELECTION, BEASTLabs Nested sampling for model selection and posterior inference<br />
-PhyDyn NA 1.3.0 PhyDyn: Epidemiological modelling with BEAST<br />
-phylodynamics NA 1.3.0 BDSKY BDSIR and Stochastic Coalescent<br />
-PoMo NA 1.0.1 PoMo, a substitution model that separates mutation and drift processes<br />
-RBS NA 1.4.0 Reversible-jump Based substitution model<br />
-SA NA 2.0.0 BEASTLabs Sampled ancestor trees<br />
-SCOTTI NA 2.0.1 Structured COalescent Transmission Tree Inference<br />
-SNAPP NA 1.4.1 SNP and AFLP Phylogenies<br />
-SpeciesNetwork NA 0.12.2 Multispecies network coalescent (MSNC) inference of introgression and hybridization<br />
-SSM NA 1.1.0 Standard Nucleotide Substitution Models<br />
-STACEY NA 1.2.4 Species delimitation and species tree estimation<br />
-StarBEAST2 NA 0.15.1 MM, SA Multispecies coalescent inference using multi-locus and fossil data<br />
-substBMA NA 1.2.2 Substitution Bayesian Model Averaging<br />
-TMA NA 1.0.0 MASTER, BEASTLabs, phylodynamics, TreeStat2, BDSKY Tree model adequacy: test whether the tree prior used is adequate for your data<br />
-TreeStat2 NA 0.0.2 Utility for calculating tree statistics from tree log file</p>
-</div>
+<p>Find a package that is not installed:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">first_absent_package_name &lt;-<span class="st"> </span>beast2_packages[ beast2_packages<span class="op">$</span>installed_version <span class="op">==</span><span class="st"> &quot;NA&quot;</span>, ]<span class="op">$</span>name[<span class="dv">1</span>]
+<span class="kw">print</span>(first_absent_package_name)
+<span class="co">#&gt; [1] &quot;bacter&quot;</span></code></pre></div>
 
 
 
