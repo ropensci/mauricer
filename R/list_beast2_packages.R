@@ -1,0 +1,19 @@
+#' @export
+list_beast2_packages <- function()
+{
+  # java -cp beast.jar beast.util.PackageManager -list
+
+  raw <- system2(
+    command = "java",
+    args = c(
+      "-cp",
+      beastier::get_default_beast2_jar_path(),
+      "beast.util.PackageManager",
+      "-list"
+    ),
+    stdout = TRUE
+  )
+  df <- stringr::str_split(raw, pattern = "\\|", n = 5, simplify = TRUE)
+  colnames(df) <- c("name", "installed_version", "latest_version", "dependencies", "description")
+  df
+}
