@@ -1,9 +1,9 @@
-#' Install a BEAST2 package
+#' Uninstall a BEAST2 package
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
 #' @author Richel J.C. Bilderbeek
 #' @export
-mrc_install <- function(name) {
+mrc_uninstall <- function(name) {
   # java -cp beast.jar beast.util.PackageManager -add bacter
   system2(
     command = "java",
@@ -11,7 +11,7 @@ mrc_install <- function(name) {
       "-cp",
       beastier::get_default_beast2_jar_path(),
       "beast.util.PackageManager",
-      "-add",
+      "-del",
       name
     ),
     stdout = FALSE
