@@ -2,14 +2,14 @@
 #' @return a data frame
 #' @author Richel J.C. Bilderbeek
 #' @examples
-#'   df <- list_beast2_packages()
+#'   df <- mrc_list()
 #'   testthat::expect_true("name" %in% names(df))
 #'   testthat::expect_true("installed_version" %in% names(df))
 #'   testthat::expect_true("latest_version" %in% names(df))
 #'   testthat::expect_true("dependencies" %in% names(df))
 #'   testthat::expect_true("description" %in% names(df))
 #' @export
-list_beast2_packages <- function()
+mrc_list <- function()
 {
   # java -cp beast.jar beast.util.PackageManager -list
   raw <- system2(
