@@ -16,6 +16,7 @@ Imports:
     beastier,
     stringr
 Suggests: 
+    testit,
     testthat,
     knitr,
     rmarkdown
