@@ -4,6 +4,9 @@
 #' @author Richel J.C. Bilderbeek
 #' @export
 mrc_uninstall <- function(name) {
+  if (!mrc_is_installed(name)) {
+    stop("Cannot uninstall absent package")
+  }
   # java -cp beast.jar beast.util.PackageManager -add bacter
   system2(
     command = "java",

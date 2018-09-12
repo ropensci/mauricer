@@ -15,3 +15,12 @@ test_that("use", {
 
   testthat::expect_false(mrc_is_installed(name))
 })
+
+test_that("cannot install installed package", {
+  df <- mrc_list()
+  present_package_name <- df[df$installed_version != "NA", ]$name[1]
+  testthat::expect_error(
+    mrc_install(present_package_name),
+    "Cannot install installed package"
+  )
+})
