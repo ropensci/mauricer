@@ -17,11 +17,14 @@ test_that("nested_sampling setup", {
     mauricer::mrc_install("NS")
   }
   testit::assert(mauricer::mrc_is_installed("NS"))
-  skip("WIP")
+  filename <- tempfile(fileext = ".xml")
   beautier::create_beast2_input_file(
     input_filenames = get_mrc_path("anthus_aco_sub.fas"),
-    output_filename = "~/out.xml",
-    mcmc = create_mcmc_nested_sampling(chain_length = 10000)
+    output_filename = filename,
+    mcmc = beautier::create_mcmc_nested_sampling(chain_length = 10000)
   )
+  beastier::is_beast2_input_file(filename, show_warnings = TRUE, verbose = TRUE)
+  skip("WIP")
+  expect_true(beastier::is_beast2_input_file(filename))
 })
 
