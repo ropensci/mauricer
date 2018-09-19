@@ -15,6 +15,10 @@ Related packages:
  * [lumier](https://github.com/richelbilderbeek/lumier) helps to create the `babette` function call needed
  * [tracerer](https://github.com/richelbilderbeek/tracerer) parses BEAST2 output (`.log`, `.trees`, etc) files.
 
+## Examples
+
+ * [YouTube video about maurices](https://youtu.be/Yk737gorcrw)
+
 ## Package dependencies
 
 Package|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
