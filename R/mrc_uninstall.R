@@ -9,10 +9,10 @@ mrc_uninstall <- function(name) {
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
   system2(
-    command = "java",
+    command = beastier::get_default_java_path(),
     args = c(
       "-cp",
-      beastier::get_default_beast2_jar_path(),
+      shQuote(beastier::get_default_beast2_jar_path()),
       "beast.util.PackageManager",
       "-del",
       name

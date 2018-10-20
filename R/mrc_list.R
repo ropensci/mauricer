@@ -11,11 +11,12 @@
 #' @export
 mrc_list <- function() {
   # java -cp beast.jar beast.util.PackageManager -list
+
   raw <- system2(
-    command = "java",
+    command = beastier::get_default_java_path(),
     args = c(
       "-cp",
-      beastier::get_default_beast2_jar_path(),
+      shQuote(beastier::get_default_beast2_jar_path()),
       "beast.util.PackageManager",
       "-list"
     ),
