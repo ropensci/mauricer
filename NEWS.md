@@ -2,7 +2,7 @@
 
 Newest versions at top.
 
-## `mauricer` 0.2.0 (2018-10-20)
+## `mauricer` 1.1.0 (2018-10-20)
 
 ### NEW FEATURES
 
@@ -20,7 +20,7 @@ Newest versions at top.
 
   * None
 
-## `mauricer` 0.1.0 (2018-09-11)
+## `mauricer` 1.0.0 (2018-09-11)
 
 ### NEW FEATURES
 
