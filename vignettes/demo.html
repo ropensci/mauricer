@@ -10,11 +10,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="author" content="Vignette Author" />
+<meta name="author" content="Richel J.C. Bilderbeek" />
 
-<meta name="date" content="2018-09-11" />
+<meta name="date" content="2018-10-20" />
 
-<title>Vignette Title</title>
+<title>mauricer demo</title>
 
 
 
@@ -68,9 +68,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 
 
-<h1 class="title toc-ignore">Vignette Title</h1>
-<h4 class="author"><em>Vignette Author</em></h4>
-<h4 class="date"><em>2018-09-11</em></h4>
+<h1 class="title toc-ignore">mauricer demo</h1>
+<h4 class="author"><em>Richel J.C. Bilderbeek</em></h4>
+<h4 class="date"><em>2018-10-20</em></h4>
 
 
 
@@ -121,8 +121,8 @@ knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">he
 <tr class="odd">
 <td align="left">bdmm</td>
 <td align="left">NA</td>
-<td align="left">0.3.1</td>
-<td align="left">MASTER, MultiTypeTree</td>
+<td align="left">0.3.3</td>
+<td align="left">MultiTypeTree, MASTER</td>
 <td align="left">pre-release of multitype birth-death model (aka birth-death-migration model)</td>
 </tr>
 <tr class="even">
@@ -143,21 +143,21 @@ knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">he
 <p>Check that is indeed not installed:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">testthat<span class="op">::</span><span class="kw">expect_false</span>(<span class="kw">mrc_is_installed</span>(first_absent_package_name))</code></pre></div>
 <p>Install that package:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># mrc_install(first_absent_package_name)</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mrc_install</span>(first_absent_package_name)</code></pre></div>
 <p>Should not be the first absent package anymore:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># beast2_packages &lt;- mrc_list() </span>
-<span class="co"># new_first_absent_package_name &lt;- beast2_packages[ </span>
-<span class="co">#   beast2_packages$installed_version == &quot;NA&quot;, </span>
-<span class="co"># ]$name[1]</span>
-<span class="co"># expect_true(new_first_absent_package_name != first_absent_package_name)</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">beast2_packages &lt;-<span class="st"> </span><span class="kw">mrc_list</span>() 
+new_first_absent_package_name &lt;-<span class="st"> </span>beast2_packages[ 
+ beast2_packages<span class="op">$</span>installed_version <span class="op">==</span><span class="st"> &quot;NA&quot;</span>, 
+]<span class="op">$</span>name[<span class="dv">1</span>]
+<span class="kw">expect_true</span>(new_first_absent_package_name <span class="op">!=</span><span class="st"> </span>first_absent_package_name)</code></pre></div>
 <p>Uninstall that package:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># unmrc_install(first_absent_package_name)</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mrc_uninstall</span>(first_absent_package_name)</code></pre></div>
 <p>Should be the first absent package again:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># beast2_packages &lt;- mrc_list() </span>
-<span class="co"># last_first_absent_package_name &lt;- beast2_packages[ </span>
-<span class="co">#   beast2_packages$installed_version == &quot;NA&quot;, </span>
-<span class="co"># ]$name[1]</span>
-<span class="co"># expect_true(last_first_absent_package_name == first_absent_package_name)</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">beast2_packages &lt;-<span class="st"> </span><span class="kw">mrc_list</span>() 
+last_first_absent_package_name &lt;-<span class="st"> </span>beast2_packages[ 
+ beast2_packages<span class="op">$</span>installed_version <span class="op">==</span><span class="st"> &quot;NA&quot;</span>, 
+]<span class="op">$</span>name[<span class="dv">1</span>]
+<span class="kw">expect_true</span>(last_first_absent_package_name <span class="op">==</span><span class="st"> </span>first_absent_package_name)</code></pre></div>
 
 
 
