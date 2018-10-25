@@ -3,7 +3,7 @@
 #' @return TRUE if the BEAST2 package is installed
 #' @author Richel J.C. Bilderbeek
 #' @export
-mrc_is_installed <- function(name) {
+mrc_is_installed <- is_beast2_pkg_installed <- function(name) {
   df <- mauricer::mrc_list()
   df[df$name == name, ]$installed_version != "NA"
 }

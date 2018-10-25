@@ -9,7 +9,7 @@
 #'   testthat::expect_true("dependencies" %in% names(df))
 #'   testthat::expect_true("description" %in% names(df))
 #' @export
-mrc_list <- function() {
+mrc_list <- list_beast2_pkgs <- function() {
   # java -cp beast.jar beast.util.PackageManager -list
 
   raw <- system2(

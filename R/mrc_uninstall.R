@@ -3,7 +3,7 @@
 #' @return nothing. It does install the BEAST2 package
 #' @author Richel J.C. Bilderbeek
 #' @export
-mrc_uninstall <- function(name) {
+mrc_uninstall <- uninstall_beast2_pkg <- function(name) {
   if (!mrc_is_installed(name)) {
     stop("Cannot uninstall absent package")
   }
