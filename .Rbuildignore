@@ -2,5 +2,6 @@
 ^\.Rproj\.user$
 ^\.travis\.yml$
 ^pics$
+^scripts$
 ^NEWS\.md$
 ^appveyor\.yml$
