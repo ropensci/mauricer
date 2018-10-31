@@ -27,7 +27,6 @@ before_script:
   # proselint
   - sudo pip install proselint
   - # No local files created
-  - egrep -oR "\"~" --include={*.R,*.Rmd}
   - if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi
   - # Do a CRAN build
   - cd scripts; ./build_cran
