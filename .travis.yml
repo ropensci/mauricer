@@ -31,14 +31,13 @@ before_script:
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
   # proselint
   - sudo pip install proselint
-  - # No local files created
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
-  - # Do a CRAN build
-  - cd scripts; sh -x build_cran
-  - echo "Done"
 
 after_success:
   - Rscript -e 'lintr::lint_package()'
   - Rscript -e 'covr::codecov()'
   - travis_wait 20 Rscript -e 'goodpractice::gp()'
   - proselint *.md | egrep -v "typography\.symbols\.curly_quotes"
+  - # No local files created
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
+  - # Do a CRAN build
+  - cd scripts; sh -x build_cran
