@@ -35,6 +35,7 @@ before_script:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
   - # Do a CRAN build
   - cd scripts; sh -x build_cran
+  - echo "Done"
 
 after_success:
   - Rscript -e 'lintr::lint_package()'
