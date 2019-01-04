@@ -8,4 +8,3 @@ test_that("cannot uninstall absent package", {
     "Cannot uninstall absent package"
   )
 })
-
