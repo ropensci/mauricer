@@ -2,7 +2,8 @@
 % Please edit documentation in R/get_beast2_pkg_names.R
 \name{mrc_list}
 \alias{mrc_list}
-\title{List all BEAST2 packages available and installed}
+\title{Obsolete function to list all BEAST2 packages available and installed.
+Use \link{get_beast2_pkg_names} instead}
 \usage{
 mrc_list()
 }
@@ -10,7 +11,8 @@ mrc_list()
 a data frame
 }
 \description{
-List all BEAST2 packages available and installed
+Obsolete function to list all BEAST2 packages available and installed.
+Use \link{get_beast2_pkg_names} instead
 }
 \author{
 Richel J.C. Bilderbeek

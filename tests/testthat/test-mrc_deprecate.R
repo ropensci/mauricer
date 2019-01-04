@@ -21,3 +21,11 @@ test_that("mrc_list", {
   )
 })
 
+test_that("mrc_is_installed", {
+  expect_error(
+    mrc_list(),
+    "'mrc_is_installed' is deprecated, use 'is_beast2_pkg_installed' instead"
+  )
+})
+
+

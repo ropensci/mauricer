@@ -41,7 +41,7 @@ print(first_absent_package_name)
 Check that is indeed not installed:
 
 ```{r}
-testthat::expect_false(mrc_is_installed(first_absent_package_name))
+testthat::expect_false(is_beast2_pkg_installed(first_absent_package_name))
 ```
 
 Install that package:

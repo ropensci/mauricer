@@ -21,7 +21,8 @@ uninstall_beast2_pkg <- function(name) {
   )
 }
 
-#' Uninstall a BEAST2 package
+#' Obsolete function to uninstall a BEAST2 package.
+#' Use \link{uninstall_beast2_pkg} instead
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
 #' @author Richel J.C. Bilderbeek

@@ -5,15 +5,15 @@ test_that("use", {
   df <- get_beast2_pkg_names()
   name <- df[df$installed_version == "NA", ]$name[1]
 
-  expect_false(mrc_is_installed(name))
+  expect_false(is_beast2_pkg_installed(name))
 
   install_beast2_pkg(name)
 
-  expect_true(mrc_is_installed(name))
+  expect_true(is_beast2_pkg_installed(name))
 
   uninstall_beast2_pkg(name)
 
-  expect_false(mrc_is_installed(name))
+  expect_false(is_beast2_pkg_installed(name))
 })
 
 test_that("cannot install installed package", {

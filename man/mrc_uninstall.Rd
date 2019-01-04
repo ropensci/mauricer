@@ -2,7 +2,8 @@
 % Please edit documentation in R/uninstall_beast2_pkg.R
 \name{mrc_uninstall}
 \alias{mrc_uninstall}
-\title{Uninstall a BEAST2 package}
+\title{Obsolete function to uninstall a BEAST2 package.
+Use \link{uninstall_beast2_pkg} instead}
 \usage{
 mrc_uninstall(name = NA)
 }
@@ -13,7 +14,8 @@ mrc_uninstall(name = NA)
 nothing. It does install the BEAST2 package
 }
 \description{
-Uninstall a BEAST2 package
+Obsolete function to uninstall a BEAST2 package.
+Use \link{uninstall_beast2_pkg} instead
 }
 \author{
 Richel J.C. Bilderbeek

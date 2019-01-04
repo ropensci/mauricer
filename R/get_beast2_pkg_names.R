@@ -39,7 +39,8 @@ get_beast2_pkg_names <- function() {
   df
 }
 
-#' List all BEAST2 packages available and installed
+#' Obsolete function to list all BEAST2 packages available and installed.
+#' Use \link{get_beast2_pkg_names} instead
 #' @return a data frame
 #' @author Richel J.C. Bilderbeek
 #' @export
