@@ -2,16 +2,15 @@
 #' @return a data frame
 #' @author Richel J.C. Bilderbeek
 #' @examples
-#'   df <- mrc_list()
+#'   df <- get_beast2_pkg_names()
 #'   testthat::expect_true("name" %in% names(df))
 #'   testthat::expect_true("installed_version" %in% names(df))
 #'   testthat::expect_true("latest_version" %in% names(df))
 #'   testthat::expect_true("dependencies" %in% names(df))
 #'   testthat::expect_true("description" %in% names(df))
 #' @export
-mrc_list <- list_beast2_pkgs <- function() {
+get_beast2_pkg_names <- function() {
   # java -cp beast.jar beast.util.PackageManager -list
-
   raw <- system2(
     command = beastier::get_default_java_path(),
     args = c(
@@ -38,4 +37,12 @@ mrc_list <- list_beast2_pkgs <- function() {
     df[, col] <- stringr::str_trim(df[, col])
   }
   df
+}
+
+#' List all BEAST2 packages available and installed
+#' @return a data frame
+#' @author Richel J.C. Bilderbeek
+#' @export
+mrc_list <- function() {
+  stop("'mrc_list' is deprecated, use 'get_beast2_pkg_names' instead")
 }

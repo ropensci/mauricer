@@ -25,7 +25,7 @@ library(testthat)
 List all BEAST2 packages:
 
 ```{r}
-beast2_packages <- mrc_list() 
+beast2_packages <- get_beast2_pkg_names() 
 knitr::kable(head(beast2_packages))
 ```
 
@@ -53,7 +53,7 @@ install_beast2_pkg(first_absent_package_name)
 Should not be the first absent package anymore:
 
 ```{r}
-beast2_packages <- mrc_list() 
+beast2_packages <- get_beast2_pkg_names() 
 new_first_absent_package_name <- beast2_packages[ 
  beast2_packages$installed_version == "NA", 
 ]$name[1]
@@ -69,7 +69,7 @@ uninstall_beast2_pkg(first_absent_package_name)
 Should be the first absent package again:
 
 ```{r}
-beast2_packages <- mrc_list() 
+beast2_packages <- get_beast2_pkg_names() 
 last_first_absent_package_name <- beast2_packages[ 
  beast2_packages$installed_version == "NA", 
 ]$name[1]

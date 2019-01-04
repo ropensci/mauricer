@@ -14,4 +14,10 @@ test_that("mrc_uninstall", {
   )
 })
 
+test_that("mrc_list", {
+  expect_error(
+    mrc_list(),
+    "'mrc_list' is deprecated, use 'get_beast2_pkg_names' instead"
+  )
+})
 

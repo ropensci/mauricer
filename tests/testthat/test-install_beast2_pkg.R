@@ -2,7 +2,7 @@ context("install_beast2_pkg")
 
 test_that("use", {
 
-  df <- mrc_list()
+  df <- get_beast2_pkg_names()
   name <- df[df$installed_version == "NA", ]$name[1]
 
   expect_false(mrc_is_installed(name))
@@ -21,7 +21,7 @@ test_that("cannot install installed package", {
   # This test needs internet connection
   if (!beastier::is_on_ci()) return()
 
-  df <- mrc_list()
+  df <- get_beast2_pkg_names()
   present_package_name <- df[df$installed_version != "NA", ]$name[1]
 
   expect_error(
