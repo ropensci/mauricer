@@ -24,3 +24,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/richelbilderbeek/mauricer
+BugReports: https://github.com/richelbilderbeek/mauricer/issues
