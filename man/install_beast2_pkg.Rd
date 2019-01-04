@@ -16,7 +16,9 @@ nothing. It does install the BEAST2 package
 Install a BEAST2 package
 }
 \examples{
-  install_beast2_pkg(name = "NS")
+  if (!is_beast2_pkg_installed("NS")) {
+    install_beast2_pkg("NS")
+  }
 }
 \author{
 Richel J.C. Bilderbeek

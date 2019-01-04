@@ -3,10 +3,12 @@
 #' @return nothing. It does install the BEAST2 package
 #' @author Richel J.C. Bilderbeek
 #' @examples
-#'   install_beast2_pkg(name = "NS")
+#'   if (!is_beast2_pkg_installed("NS")) {
+#'     install_beast2_pkg("NS")
+#'   }
 #' @export
 install_beast2_pkg <- function(name) {
-  if (mrc_is_installed(name)) {
+  if (is_beast2_pkg_installed(name)) {
     stop("Cannot install installed package")
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
