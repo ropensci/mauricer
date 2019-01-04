@@ -1,11 +1,14 @@
 {
-  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "mauricer",
   "description": "'BEAST2' (<http://www.beast2.org>) is a widely used\n  Bayesian phylogenetic tool, that uses DNA/RNA/protein data\n  and many model priors to create a posterior of jointly estimated \n  phylogenies and parameters.\n  'BEAST2' is commonly accompanied by 'BEAUti 2' (<http://www.beast2.org>),\n  which, among others, allows one to install BEAST2 package. \n  The mauricer package allows to install BEAST2 packages from R.",
   "name": "mauricer: Install BEAST2 packages from R",
-  "codeRepository": "https://github.com/richelbilderbeek/mauricer",
-  "issueTracker": "https://github.com/richelbilderbeek/mauricer/issues",
+  "codeRepository": "https://github.com/ropensci/mauricer",
+  "issueTracker": "https://github.com/ropensci/mauricer/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
   "version": "1.1.1",
   "programmingLanguage": {
@@ -93,8 +96,28 @@
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     }
   ],
-  "releaseNotes": "https://github.com/richelbilderbeek/mauricer/blob/master/NEWS.md",
-  "readme": "https://github.com/richelbilderbeek/mauricer/blob/master/README.md",
-  "fileSize": "19.031KB",
-  "contIntegration": ["https://travis-ci.org", "https://www.appveyor.com", "https://www.codecov.io", "https://travis-ci.org/richelbilderbeek/mauricer", "https://ci.appveyor.com/project/richelbilderbeek/mauricer/branch/master", "https://codecov.io/github/richelbilderbeek/mauricer/branch/master", "https://travis-ci.org/richelbilderbeek/mauricer", "https://ci.appveyor.com/project/richelbilderbeek/mauricer/branch/develop", "https://codecov.io/github/richelbilderbeek/mauricer/branch/develop", "https://travis-ci.org/richelbilderbeek/beastier", "https://codecov.io/github/richelbilderbeek/beastier/branch/master", "https://travis-ci.org/richelbilderbeek/babette", "https://codecov.io/github/richelbilderbeek/babette/branch/master", "https://travis-ci.org/richelbilderbeek/beautier", "https://codecov.io/github/richelbilderbeek/beautier/branch/master", "https://travis-ci.org/richelbilderbeek/lumier", "https://codecov.io/github/richelbilderbeek/lumier/branch/master", "https://travis-ci.org/richelbilderbeek/tracerer", "https://codecov.io/github/richelbilderbeek/tracerer/branch/master"]
+  "releaseNotes": "https://github.com/ropensci/mauricer/blob/master/NEWS.md",
+  "readme": "https://github.com/ropensci/mauricer/blob/master/README.md",
+  "fileSize": "18.98KB",
+  "contIntegration": [
+    "https://travis-ci.org",
+    "https://www.appveyor.com",
+    "https://www.codecov.io",
+    "https://travis-ci.org/ropensci/mauricer",
+    "https://ci.appveyor.com/project/ropensci/mauricer/branch/master",
+    "https://codecov.io/github/ropensci/mauricer/branch/master",
+    "https://travis-ci.org/ropensci/mauricer",
+    "https://ci.appveyor.com/project/ropensci/mauricer/branch/develop",
+    "https://codecov.io/github/ropensci/mauricer/branch/develop",
+    "https://travis-ci.org/ropensci/beastier",
+    "https://codecov.io/github/ropensci/beastier/branch/master",
+    "https://travis-ci.org/ropensci/babette",
+    "https://codecov.io/github/ropensci/babette/branch/master",
+    "https://travis-ci.org/ropensci/beautier",
+    "https://codecov.io/github/ropensci/beautier/branch/master",
+    "https://travis-ci.org/ropensci/lumier",
+    "https://codecov.io/github/ropensci/lumier/branch/master",
+    "https://travis-ci.org/ropensci/tracerer",
+    "https://codecov.io/github/ropensci/tracerer/branch/master"
+  ]
 }

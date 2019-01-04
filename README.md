@@ -4,18 +4,18 @@
 
 Branch|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![AppVeyor logo](pics/AppVeyor.png)](https://www.appveyor.com)|[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
 ---|---|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/mauricer.svg?branch=master)](https://travis-ci.org/richelbilderbeek/mauricer)|[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/mauricer?branch=master&svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer)|[![codecov.io](https://codecov.io/github/richelbilderbeek/mauricer/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/mauricer/branch/master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/mauricer.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/mauricer)|[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/mauricer?branch=develop&svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer)|[![codecov.io](https://codecov.io/github/richelbilderbeek/mauricer/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/mauricer/branch/develop)
+master|[![Build Status](https://travis-ci.org/ropensci/mauricer.svg?branch=master)](https://travis-ci.org/ropensci/mauricer)|[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/mauricer?branch=master&svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer)|[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/mauricer/branch/master)
+develop|[![Build Status](https://travis-ci.org/ropensci/mauricer.svg?branch=develop)](https://travis-ci.org/ropensci/mauricer)|[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/mauricer?branch=develop&svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer)|[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=develop)](https://codecov.io/github/ropensci/mauricer/branch/develop)
 
 Install BEAST2 packages from R.
 
 Related packages:
 
- * [babette](https://github.com/richelbilderbeek/babette) do a full BEAST2 workflow.
- * [beautier](https://github.com/richelbilderbeek/beautier) creates BEAST2 input (`.xml`) files.
- * [beastier](https://github.com/richelbilderbeek/beastier) runs BEAST2
- * [lumier](https://github.com/richelbilderbeek/lumier) helps to create the `babette` function call needed
- * [tracerer](https://github.com/richelbilderbeek/tracerer) parses BEAST2 output (`.log`, `.trees`, etc) files.
+ * [babette](https://github.com/ropensci/babette) do a full BEAST2 workflow.
+ * [beautier](https://github.com/ropensci/beautier) creates BEAST2 input (`.xml`) files.
+ * [beastier](https://github.com/ropensci/beastier) runs BEAST2
+ * [lumier](https://github.com/ropensci/lumier) helps to create the `babette` function call needed
+ * [tracerer](https://github.com/ropensci/tracerer) parses BEAST2 output (`.log`, `.trees`, etc) files.
 
 ## Examples
 
@@ -25,15 +25,15 @@ Related packages:
 
 Package|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
 ---|---|---
-[beastier](https://github.com/richelbilderbeek/beastier)|[![Build Status](https://travis-ci.org/richelbilderbeek/beastier.svg?branch=master)](https://travis-ci.org/richelbilderbeek/beastier)|[![codecov.io](https://codecov.io/github/richelbilderbeek/beastier/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/beastier/branch/master)
+[beastier](https://github.com/ropensci/beastier)|[![Build Status](https://travis-ci.org/ropensci/beastier.svg?branch=master)](https://travis-ci.org/ropensci/beastier)|[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beastier/branch/master)
 
 ## Related packages
 
 Package|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
 ---|---|---
-[babette](https://github.com/richelbilderbeek/babette)|[![Build Status](https://travis-ci.org/richelbilderbeek/babette.svg?branch=master)](https://travis-ci.org/richelbilderbeek/babette)|[![codecov.io](https://codecov.io/github/richelbilderbeek/babette/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/babette/branch/master)
-[beautier](https://github.com/richelbilderbeek/beautier)|[![Build Status](https://travis-ci.org/richelbilderbeek/beautier.svg?branch=master)](https://travis-ci.org/richelbilderbeek/beautier)|[![codecov.io](https://codecov.io/github/richelbilderbeek/beautier/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/beautier/branch/master)
-[lumier](https://github.com/richelbilderbeek/lumier)|[![Build Status](https://travis-ci.org/richelbilderbeek/lumier.svg?branch=master)](https://travis-ci.org/richelbilderbeek/lumier)|[![codecov.io](https://codecov.io/github/richelbilderbeek/lumier/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/lumier/branch/master)
-[tracerer](https://github.com/richelbilderbeek/tracerer)|[![Build Status](https://travis-ci.org/richelbilderbeek/tracerer.svg?branch=master)](https://travis-ci.org/richelbilderbeek/tracerer)|[![codecov.io](https://codecov.io/github/richelbilderbeek/tracerer/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/tracerer/branch/master)
+[babette](https://github.com/ropensci/babette)|[![Build Status](https://travis-ci.org/ropensci/babette.svg?branch=master)](https://travis-ci.org/ropensci/babette)|[![codecov.io](https://codecov.io/github/ropensci/babette/coverage.svg?branch=master)](https://codecov.io/github/ropensci/babette/branch/master)
+[beautier](https://github.com/ropensci/beautier)|[![Build Status](https://travis-ci.org/ropensci/beautier.svg?branch=master)](https://travis-ci.org/ropensci/beautier)|[![codecov.io](https://codecov.io/github/ropensci/beautier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beautier/branch/master)
+[lumier](https://github.com/ropensci/lumier)|[![Build Status](https://travis-ci.org/ropensci/lumier.svg?branch=master)](https://travis-ci.org/ropensci/lumier)|[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/lumier/branch/master)
+[tracerer](https://github.com/ropensci/tracerer)|[![Build Status](https://travis-ci.org/ropensci/tracerer.svg?branch=master)](https://travis-ci.org/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/tracerer/branch/master)
 
 [![ropensci_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)
