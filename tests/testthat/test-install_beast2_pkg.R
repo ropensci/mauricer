@@ -11,7 +11,7 @@ test_that("use", {
 
   expect_true(mrc_is_installed(name))
 
-  mrc_uninstall(name)
+  uninstall_beast2_pkg(name)
 
   expect_false(mrc_is_installed(name))
 })

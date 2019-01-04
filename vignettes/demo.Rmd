@@ -47,7 +47,7 @@ testthat::expect_false(mrc_is_installed(first_absent_package_name))
 Install that package:
 
 ```{r}
-mrc_install(first_absent_package_name)
+install_beast2_pkg(first_absent_package_name)
 ```
 
 Should not be the first absent package anymore:
@@ -63,7 +63,7 @@ expect_true(new_first_absent_package_name != first_absent_package_name)
 Uninstall that package:
 
 ```{r}
-mrc_uninstall(first_absent_package_name)
+uninstall_beast2_pkg(first_absent_package_name)
 ```
 
 Should be the first absent package again:

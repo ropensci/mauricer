@@ -3,7 +3,7 @@
 #' @return nothing. It does install the BEAST2 package
 #' @author Richel J.C. Bilderbeek
 #' @export
-mrc_uninstall <- uninstall_beast2_pkg <- function(name) {
+uninstall_beast2_pkg <- function(name) {
   if (!mrc_is_installed(name)) {
     stop("Cannot uninstall absent package")
   }
@@ -19,4 +19,13 @@ mrc_uninstall <- uninstall_beast2_pkg <- function(name) {
     ),
     stdout = FALSE
   )
+}
+
+#' Uninstall a BEAST2 package
+#' @param name the package's name
+#' @return nothing. It does install the BEAST2 package
+#' @author Richel J.C. Bilderbeek
+#' @export
+mrc_uninstall <- function(name = NA) {
+  stop("'mrc_uninstall' is deprecated, use 'uninstall_beast2_pkg' instead")
 }

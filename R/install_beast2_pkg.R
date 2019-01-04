@@ -30,6 +30,5 @@ install_beast2_pkg <- function(name) {
 #' @author Richel J.C. Bilderbeek
 #' @export
 mrc_install <- function(name = NA) {
-  stop("'mrc_install' will be deprecated, use 'install_beast2_pkg' instead")
-  install_beast2_pkg(name)
+  stop("'mrc_install' is deprecated, use 'install_beast2_pkg' instead")
 }
