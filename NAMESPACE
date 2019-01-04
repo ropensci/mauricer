@@ -2,6 +2,7 @@
 
 export(get_mrc_path)
 export(get_mrc_paths)
+export(install_beast2_pkg)
 export(mrc_install)
 export(mrc_is_installed)
 export(mrc_list)

@@ -1,4 +1,4 @@
-context("mrc_install")
+context("install_beast2_pkg")
 
 test_that("use", {
 
@@ -7,7 +7,7 @@ test_that("use", {
 
   expect_false(mrc_is_installed(name))
 
-  mrc_install(name)
+  install_beast2_pkg(name)
 
   expect_true(mrc_is_installed(name))
 
@@ -17,11 +17,15 @@ test_that("use", {
 })
 
 test_that("cannot install installed package", {
+
+  # This test needs internet connection
+  if (!beastier::is_on_ci()) return()
+
   df <- mrc_list()
   present_package_name <- df[df$installed_version != "NA", ]$name[1]
 
   expect_error(
-    mrc_install(present_package_name),
+    install_beast2_pkg(present_package_name),
     "Cannot install installed package"
   )
 })
