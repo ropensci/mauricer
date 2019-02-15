@@ -18,5 +18,5 @@ Obsolete function to install a BEAST2 package.
 Use \link{install_beast2_pkg} instead
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

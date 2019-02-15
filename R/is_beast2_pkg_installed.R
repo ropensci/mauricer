@@ -1,7 +1,7 @@
 #' Checks if a BEAST2 package is already installed
 #' @param name BEAST2 package name
 #' @return TRUE if the BEAST2 package is installed
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 is_beast2_pkg_installed <- function(name) {
   df <- mauricer::get_beast2_pkg_names()
@@ -12,7 +12,7 @@ is_beast2_pkg_installed <- function(name) {
 #' Use \link{is_beast2_pkg_installed} instead
 #' @param name BEAST2 package name
 #' @return TRUE if the BEAST2 package is installed
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 mrc_is_installed <- function(name = NA) {
   stop(

@@ -16,5 +16,5 @@ nothing. It does install the BEAST2 package
 Uninstall a BEAST2 package
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

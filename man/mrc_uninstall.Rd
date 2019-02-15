@@ -18,5 +18,5 @@ Obsolete function to uninstall a BEAST2 package.
 Use \link{uninstall_beast2_pkg} instead
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

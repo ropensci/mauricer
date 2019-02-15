@@ -1,7 +1,7 @@
 #' Uninstall a BEAST2 package
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 uninstall_beast2_pkg <- function(name) {
   if (!is_beast2_pkg_installed(name)) {
@@ -25,7 +25,7 @@ uninstall_beast2_pkg <- function(name) {
 #' Use \link{uninstall_beast2_pkg} instead
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 mrc_uninstall <- function(name = NA) {
   stop("'mrc_uninstall' is deprecated, use 'uninstall_beast2_pkg' instead")

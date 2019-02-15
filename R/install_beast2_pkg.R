@@ -1,7 +1,7 @@
 #' Install a BEAST2 package
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @examples
 #'   if (!is_beast2_pkg_installed("NS")) {
 #'     install_beast2_pkg("NS")
@@ -29,7 +29,7 @@ install_beast2_pkg <- function(name) {
 #' Use \link{install_beast2_pkg} instead
 #' @param name the package's name
 #' @return nothing. It does install the BEAST2 package
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 mrc_install <- function(name = NA) {
   stop("'mrc_install' is deprecated, use 'install_beast2_pkg' instead")

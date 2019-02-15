@@ -16,5 +16,5 @@ TRUE if the BEAST2 package is installed
 Checks if a BEAST2 package is already installed
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

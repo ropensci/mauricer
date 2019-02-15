@@ -21,5 +21,5 @@ List all BEAST2 packages available and installed
   testthat::expect_true("description" \%in\% names(df))
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

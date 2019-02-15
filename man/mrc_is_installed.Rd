@@ -18,5 +18,5 @@ Obsolete function to checks if a BEAST2 package is already installed.
 Use \link{is_beast2_pkg_installed} instead
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }

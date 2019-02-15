@@ -1,6 +1,6 @@
 #' List all BEAST2 packages available and installed
 #' @return a data frame
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @examples
 #'   df <- get_beast2_pkg_names()
 #'   testthat::expect_true("name" %in% names(df))
@@ -42,7 +42,7 @@ get_beast2_pkg_names <- function() {
 #' Obsolete function to list all BEAST2 packages available and installed.
 #' Use \link{get_beast2_pkg_names} instead
 #' @return a data frame
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 #' @export
 mrc_list <- function() {
   stop("'mrc_list' is deprecated, use 'get_beast2_pkg_names' instead")

@@ -15,5 +15,5 @@ Obsolete function to list all BEAST2 packages available and installed.
 Use \link{get_beast2_pkg_names} instead
 }
 \author{
-Richel J.C. Bilderbeek
+Richèl J.C. Bilderbeek
 }
