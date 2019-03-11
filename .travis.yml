@@ -17,6 +17,9 @@ r_packages:
   - hunspell
   - xml2
 
+r_binary_packages:
+  - phangorn
+
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
