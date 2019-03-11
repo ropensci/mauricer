@@ -34,9 +34,6 @@ before_script:
   - # Java 8
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -qq oracle-java8-installer; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install oracle-java8-set-default; fi
-  - # OpenMP, from https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then xcode-select --install; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update && brew install llvm; fi
   - # BEAST2
   - Rscript -e "beastier::install_beast2()"
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
