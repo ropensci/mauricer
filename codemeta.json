@@ -5,12 +5,12 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "mauricer",
-  "description": "'BEAST2' (<http://www.beast2.org>) is a widely used\n  Bayesian phylogenetic tool, that uses DNA/RNA/protein data\n  and many model priors to create a posterior of jointly estimated \n  phylogenies and parameters.\n  'BEAST2' is commonly accompanied by 'BEAUti 2' (<http://www.beast2.org>),\n  which, among others, allows one to install BEAST2 package. \n  The mauricer package allows to install BEAST2 packages from R.",
-  "name": "mauricer: Install BEAST2 packages from R",
+  "description": "'BEAST2' (<http://www.beast2.org>) is a widely used\n    Bayesian phylogenetic tool, that uses DNA/RNA/protein data\n    and many model priors to create a posterior of jointly estimated \n    phylogenies and parameters.\n    'BEAST2' is commonly accompanied by 'BEAUti 2' (<http://www.beast2.org>),\n    which, among others, allows one to install 'BEAST2' package. \n    The mauricer package allows to install 'BEAST2' packages from 'R'.",
+  "name": "mauricer: Install BEAST2 packages",
   "codeRepository": "https://github.com/ropensci/mauricer",
   "issueTracker": "https://github.com/ropensci/mauricer/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "2.0",
+  "version": "2.0.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -22,7 +22,7 @@
   "maintainer": [
     {
       "@type": "Person",
-      "givenName": ["Richel", "J.C."],
+      "givenName": ["Richèl", "J.C."],
       "familyName": "Bilderbeek",
       "email": "richel@richelbilderbeek.nl"
     }
@@ -98,7 +98,7 @@
   ],
   "releaseNotes": "https://github.com/ropensci/mauricer/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/mauricer/blob/master/README.md",
-  "fileSize": "18.976KB",
+  "fileSize": "10.766KB",
   "contIntegration": [
     "https://travis-ci.org",
     "https://www.appveyor.com",
@@ -119,5 +119,34 @@
     "https://codecov.io/github/ropensci/lumier/branch/master",
     "https://travis-ci.org/ropensci/tracerer",
     "https://codecov.io/github/ropensci/tracerer/branch/master"
+  ],
+  "keywords": ["r", "r-package", "rstats"],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "datePublished": "2018",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": ["Richèl", "JC"],
+          "familyName": "Bilderbeek"
+        },
+        {
+          "@type": "Person",
+          "givenName": ["Rampal", "S"],
+          "familyName": "Etienne"
+        }
+      ],
+      "name": "babette: BEAUti 2, BEAST 2 and Tracer for R",
+      "url": "https://doi.org/10.1111/2041-210X.13032",
+      "isPartOf": {
+        "@type": "PublicationIssue",
+        "datePublished": "2018",
+        "isPartOf": {
+          "@type": ["PublicationVolume", "Periodical"],
+          "name": "Methods in Ecology and Evolution"
+        }
+      }
+    }
   ]
 }

@@ -2,7 +2,43 @@
 
 Newest versions at top.
 
-## `mauricer` 1.1.1 (2018-11-01)
+## `mauricer` 2.0.1 (2019-01-04)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Processed CRAN feedback on `beastier` on this repo 
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
+## `mauricer` 2.0 (2019-01-04)
+
+### NEW FEATURES
+
+  * Transferred ownership to `ropensci`
+
+### MINOR IMPROVEMENTS
+
+  * Use more readable function names
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
+## `mauricer` 1.2 (2018-10-26)
 
 ### NEW FEATURES
 
@@ -11,6 +47,8 @@ Newest versions at top.
 ### MINOR IMPROVEMENTS
 
   * Tested to work on macOS
+  * Improved DESCRIPTION
+  * Improved function names
 
 ### BUG FIXES
 
