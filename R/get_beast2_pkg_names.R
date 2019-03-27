@@ -10,6 +10,9 @@
 #'   testthat::expect_true("description" %in% names(df))
 #' @export
 get_beast2_pkg_names <- function() {
+  if (!beastier::is_beast2_installed()) {
+    stop("BEAST2 not installed. Tip: use 'beastier::install_beast2()'")
+  }
   # java -cp beast.jar beast.util.PackageManager -list
   raw <- system2(
     command = beastier::get_default_java_path(),

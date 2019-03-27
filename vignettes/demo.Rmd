@@ -25,53 +25,67 @@ library(testthat)
 List all BEAST2 packages:
 
 ```{r}
-beast2_packages <- get_beast2_pkg_names() 
-knitr::kable(head(beast2_packages))
+if (beastier::is_beast2_installed()) {
+  beast2_packages <- get_beast2_pkg_names() 
+  knitr::kable(head(beast2_packages))
+}
 ```
 
 Find a package that is not installed:
 
 ```{r}
-first_absent_package_name <- beast2_packages[ 
-  beast2_packages$installed_version == "NA", 
-]$name[1]
-print(first_absent_package_name)
+if (beastier::is_beast2_installed()) {
+  first_absent_package_name <- beast2_packages[ 
+    beast2_packages$installed_version == "NA", 
+  ]$name[1]
+  print(first_absent_package_name)
+}
 ```
 
 Check that is indeed not installed:
 
 ```{r}
-testthat::expect_false(is_beast2_pkg_installed(first_absent_package_name))
+if (beastier::is_beast2_installed()) {
+  expect_false(is_beast2_pkg_installed(first_absent_package_name))
+}
 ```
 
 Install that package:
 
 ```{r}
-install_beast2_pkg(first_absent_package_name)
+if (beastier::is_beast2_installed()) {
+  install_beast2_pkg(first_absent_package_name)
+}
 ```
 
 Should not be the first absent package anymore:
 
 ```{r}
-beast2_packages <- get_beast2_pkg_names() 
-new_first_absent_package_name <- beast2_packages[ 
- beast2_packages$installed_version == "NA", 
-]$name[1]
-expect_true(new_first_absent_package_name != first_absent_package_name)
+if (beastier::is_beast2_installed()) {
+  beast2_packages <- get_beast2_pkg_names() 
+  new_first_absent_package_name <- beast2_packages[ 
+   beast2_packages$installed_version == "NA", 
+  ]$name[1]
+  expect_true(new_first_absent_package_name != first_absent_package_name)
+}
 ```
 
 Uninstall that package:
 
 ```{r}
-uninstall_beast2_pkg(first_absent_package_name)
+if (beastier::is_beast2_installed()) {
+  uninstall_beast2_pkg(first_absent_package_name)
+}
 ```
 
 Should be the first absent package again:
 
 ```{r}
-beast2_packages <- get_beast2_pkg_names() 
-last_first_absent_package_name <- beast2_packages[ 
- beast2_packages$installed_version == "NA", 
-]$name[1]
-expect_true(last_first_absent_package_name == first_absent_package_name)
+if (beastier::is_beast2_installed()) {
+  beast2_packages <- get_beast2_pkg_names() 
+  last_first_absent_package_name <- beast2_packages[ 
+   beast2_packages$installed_version == "NA", 
+  ]$name[1]
+  expect_equal(last_first_absent_package_name, first_absent_package_name)
+}
 ```
