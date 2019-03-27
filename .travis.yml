@@ -41,7 +41,6 @@ before_script:
   - sudo pip install proselint
 
 after_success:
-  - Rscript -e 'vignette(package = "mauricer")'
   - Rscript -e "lintr::lint_package()"
   - Rscript -e "covr::codecov()"
   - travis_wait 20 Rscript -e "goodpractice::gp()"

@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.2 (2019-03-27)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Builds with and without BEAST2 installed
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.0.1 (2019-01-04)
 
 ### NEW FEATURES
