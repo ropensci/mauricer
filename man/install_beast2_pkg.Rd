@@ -16,7 +16,7 @@ nothing. It does install the BEAST2 package
 Install a BEAST2 package
 }
 \examples{
-  if (!is_beast2_pkg_installed("NS")) {
+  if (beastier::is_beast2_installed() && !is_beast2_pkg_installed("NS")) {
     install_beast2_pkg("NS")
   }
 }

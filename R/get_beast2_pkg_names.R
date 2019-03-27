@@ -2,12 +2,16 @@
 #' @return a data frame
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#'   df <- get_beast2_pkg_names()
-#'   testthat::expect_true("name" %in% names(df))
-#'   testthat::expect_true("installed_version" %in% names(df))
-#'   testthat::expect_true("latest_version" %in% names(df))
-#'   testthat::expect_true("dependencies" %in% names(df))
-#'   testthat::expect_true("description" %in% names(df))
+#'   library(testthat)
+#'
+#'   if (beastier::is_beast2_installed()) {
+#'     df <- get_beast2_pkg_names()
+#'     expect_true("name" %in% names(df))
+#'     expect_true("installed_version" %in% names(df))
+#'     expect_true("latest_version" %in% names(df))
+#'     expect_true("dependencies" %in% names(df))
+#'     expect_true("description" %in% names(df))
+#'   }
 #' @export
 get_beast2_pkg_names <- function() {
   if (!beastier::is_beast2_installed()) {

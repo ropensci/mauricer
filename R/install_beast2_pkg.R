@@ -3,7 +3,7 @@
 #' @return nothing. It does install the BEAST2 package
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#'   if (!is_beast2_pkg_installed("NS")) {
+#'   if (beastier::is_beast2_installed() && !is_beast2_pkg_installed("NS")) {
 #'     install_beast2_pkg("NS")
 #'   }
 #' @export
