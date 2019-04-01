@@ -10,7 +10,7 @@ Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
     phylogenies and parameters.
     'BEAST2' is commonly accompanied by 'BEAUti 2' (<http://www.beast2.org>),
     which, among others, allows one to install 'BEAST2' package. 
-    The mauricer package allows to install 'BEAST2' packages from 'R'.
+    This package allows to install 'BEAST2' packages from 'R'.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
