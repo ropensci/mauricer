@@ -16,7 +16,7 @@
 #'     \code{babette}: work with BEAST2
 #'   }
 #'   \item{
-#'     \link{beautier}: create BEAST2 input files
+#'     \code{beautier}: create BEAST2 input files
 #'   }
 #'   \item{
 #'     \link{beastier}: run BEAST2
@@ -25,7 +25,7 @@
 #'     \link{mauricer}: install BEAST2 packages
 #'   }
 #'   \item{
-#'     \link{tracerer}: parse and analyse BEAST2 output
+#'     \code{tracerer}: parse and analyse BEAST2 output
 #'   }
 #' }
 #' @docType package
