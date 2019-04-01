@@ -17,8 +17,10 @@ the full path of the filename, if and only if
 Get the full path of a file in the \code{inst/extdata} folder
 }
 \examples{
-  testit::assert(is.character(get_mrc_path("anthus_aco_sub.fas")))
-  testit::assert(is.character(get_mrc_path("anthus_nd2_sub.fas")))
+  library(testthat)
+
+  expect_true(file.exists(get_mrc_path("anthus_aco_sub.fas")))
+  expect_true(file.exists(get_mrc_path("anthus_nd2_sub.fas")))
 }
 \seealso{
 for more files, use \code{\link{get_mrc_paths}}

@@ -15,6 +15,22 @@ nothing. It does install the BEAST2 package
 \description{
 Uninstall a BEAST2 package
 }
+\examples{
+  library(testthat)
+
+  # Only install a package on Travis, if BEAST2 is installed
+  # and the package is not
+  if (is_on_travis() &&
+    is_beast2_installed()
+    && !is_beast2_pkg_installed("NS")
+  ) {
+    install_beast2_pkg("NS")
+    expect_true(is_beast2_pkg_installed("NS"))
+
+    uninstall_beast2_pkg("NS")
+    expect_false(is_beast2_pkg_installed("NS"))
+  }
+}
 \author{
 Richèl J.C. Bilderbeek
 }

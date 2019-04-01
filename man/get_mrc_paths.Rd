@@ -17,13 +17,10 @@ the filenames' full paths, if and only if
 Get the full paths of files in the 'inst/extdata' folder
 }
 \examples{
-  testit::assert(
-    length(
-      get_mrc_paths(
-        c("anthus_aco_sub.fas", "anthus_nd2_sub.fas")
-      )
-     ) == 2
-   )
+  filenames <- get_mrc_paths(c("anthus_aco_sub.fas", "anthus_nd2_sub.fas"))
+
+  library(testthat)
+  expect_true(all(file.exists(filenames)))
 }
 \seealso{
 for one file, use \code{\link{get_mrc_path}}

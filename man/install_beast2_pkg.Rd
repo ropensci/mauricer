@@ -16,8 +16,16 @@ nothing. It does install the BEAST2 package
 Install a BEAST2 package
 }
 \examples{
-  if (beastier::is_beast2_installed() && !is_beast2_pkg_installed("NS")) {
+  library(testthat)
+
+  # Only install a package on Travis, if BEAST2 is installed
+  # and the package is not
+  if (is_on_travis() &&
+    is_beast2_installed()
+    && !is_beast2_pkg_installed("NS")
+  ) {
     install_beast2_pkg("NS")
+    expect_true(is_beast2_pkg_installed("NS"))
   }
 }
 \author{

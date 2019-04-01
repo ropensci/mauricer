@@ -15,7 +15,7 @@ List all BEAST2 packages available and installed
 \examples{
   library(testthat)
 
-  if (beastier::is_beast2_installed()) {
+  if (is_beast2_installed()) {
     df <- get_beast2_pkg_names()
     expect_true("name" \%in\% names(df))
     expect_true("installed_version" \%in\% names(df))

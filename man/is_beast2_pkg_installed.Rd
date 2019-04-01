@@ -15,6 +15,18 @@ TRUE if the BEAST2 package is installed
 \description{
 Checks if a BEAST2 package is already installed
 }
+\examples{
+  library(testthat)
+
+  if (is_beast2_installed()) {
+    print(
+      paste(
+        "Is the NS BEAST2 package installed:",
+        is_beast2_pkg_installed("NS")
+      )
+    )
+  }
+}
 \author{
 Richèl J.C. Bilderbeek
 }
