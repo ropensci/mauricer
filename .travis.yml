@@ -1,4 +1,8 @@
 language: r
+cache: packages
+
+r_packages:
+  - devtools
 
 matrix:
   include:
@@ -8,8 +12,6 @@ matrix:
     os: linux
   - r: release
     os: osx
-
-cache: packages
 
 r_github_packages:
   - jimhester/covr
