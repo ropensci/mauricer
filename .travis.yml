@@ -11,12 +11,6 @@ matrix:
 
 cache: packages
 
-r_packages:
-  - devtools
-  - ggplot2
-  - hunspell
-  - xml2
-
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
