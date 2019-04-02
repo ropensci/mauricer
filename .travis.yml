@@ -1,8 +1,9 @@
 language: r
 cache: packages
 
-#r_packages:
-#  - devtools
+r_packages:
+  - devtools
+  - xml2
 
 matrix:
   include:
