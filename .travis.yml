@@ -35,9 +35,9 @@ before_script:
   - sudo pip install proselint
 
 after_success:
-  - Rscript -e "lintr::lint_package()"
-  - Rscript -e "covr::codecov()"
-  - travis_wait 20 Rscript -e "goodpractice::gp()"
+  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then Rscript -e "lintr::lint_package()"; fi
+  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then Rscript -e "covr::codecov()"; fi
+  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then travis_wait 20 Rscript -e "goodpractice::gp()"; fi
   - proselint *.md | egrep -v "typography\.symbols\.curly_quotes"
   - # No local files created
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
