@@ -16,7 +16,7 @@ matrix:
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
-  - ropensci/beastier
+  - ropensci/beastier@develop
   - MangoTheCat/goodpractice
   - ropensci/spelling
 
