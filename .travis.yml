@@ -18,6 +18,7 @@ r_github_packages:
   - jimhester/covr
   - jimhester/lintr
   - ropensci/beastier
+  - ropensci/tracerer@develop
   - MangoTheCat/goodpractice
   - ropensci/spelling
 
