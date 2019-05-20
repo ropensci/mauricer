@@ -1,6 +1,6 @@
 language: r
-cache: packages
 dist: xenial
+cache: packages
 
 r_packages:
   - xml2
