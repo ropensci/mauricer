@@ -26,3 +26,4 @@ Suggests:
 VignetteBuilder: knitr
 URL: https://github.com/ropensci/mauricer
 BugReports: https://github.com/ropensci/mauricer/issues
+SystemRequirements: BEAST2 (http://www.beast2.org/)
