@@ -1,6 +1,6 @@
 Package: mauricer
 Type: Package
-Title: Install BEAST2 packages
+Title: Install 'BEAST2' Packages
 Version: 2.0.3
 Author: Richèl J.C. Bilderbeek
 Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
