@@ -1,7 +1,7 @@
 Package: mauricer
 Type: Package
 Title: Install BEAST2 packages
-Version: 2.0.2
+Version: 2.0.3
 Author: Richèl J.C. Bilderbeek
 Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
 Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
@@ -20,7 +20,7 @@ Imports:
     stringr
 Suggests: 
     testit,
-    testthat,
+    testthat (>= 2.1.0),
     knitr,
     rmarkdown
 VignetteBuilder: knitr

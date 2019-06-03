@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.3 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Depends on `beastier` being on CRAN
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.0.2 (2019-03-27)
 
 ### NEW FEATURES
