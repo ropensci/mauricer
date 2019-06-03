@@ -4,3 +4,4 @@ Meta
 .Rhistory
 .Rproj.user
 scripts/build/
+inst/doc
