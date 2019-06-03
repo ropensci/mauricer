@@ -23,16 +23,16 @@ This package allows to install 'BEAST2' packages from 'R'.
     \code{babette}: work with BEAST2
   }
   \item{
-    \code{beautier}: create BEAST2 input files
+    \link[beautier]{beautier}: create BEAST2 input files
   }
   \item{
-    \link{beastier}: run BEAST2
+    \link[beastier]{beastier}: run BEAST2
   }
   \item{
     \link{mauricer}: install BEAST2 packages
   }
   \item{
-    \code{tracerer}: parse and analyse BEAST2 output
+    \code[tracerer]{tracerer}: parse and analyse BEAST2 output
   }
 }
 }
