@@ -25,7 +25,7 @@
 #'     \link{mauricer}: install BEAST2 packages
 #'   }
 #'   \item{
-#'     \code[tracerer]{tracerer}: parse and analyse BEAST2 output
+#'     \link[tracerer]{tracerer}: parse and analyse BEAST2 output
 #'   }
 #' }
 #' @docType package
