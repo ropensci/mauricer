@@ -35,13 +35,3 @@ uninstall_beast2_pkg <- function(name) {
     stdout = FALSE
   )
 }
-
-#' Obsolete function to uninstall a BEAST2 package.
-#' Use \link{uninstall_beast2_pkg} instead
-#' @param name the package's name
-#' @return nothing. It does install the BEAST2 package
-#' @author Richèl J.C. Bilderbeek
-#' @export
-mrc_uninstall <- function(name = NA) {
-  stop("'mrc_uninstall' is deprecated, use 'uninstall_beast2_pkg' instead")
-}

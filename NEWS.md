@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.4 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Removed all deprecated functions; those starting with `mrc_`
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.0.3 (2019-06-03)
 
 ### NEW FEATURES

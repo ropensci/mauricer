@@ -45,12 +45,3 @@ get_beast2_pkg_names <- function() {
   }
   df
 }
-
-#' Obsolete function to list all BEAST2 packages available and installed.
-#' Use \link{get_beast2_pkg_names} instead
-#' @return a data frame
-#' @author Richèl J.C. Bilderbeek
-#' @export
-mrc_list <- function() {
-  stop("'mrc_list' is deprecated, use 'get_beast2_pkg_names' instead")
-}
