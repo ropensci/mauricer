@@ -47,5 +47,3 @@ test_that("NS, deep", {
     )
   }
 })
-
-
