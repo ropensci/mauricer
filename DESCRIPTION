@@ -18,11 +18,12 @@ RoxygenNote: 6.1.1
 Imports:
     beastier,
     stringr
-Suggests: 
-    testit,
-    testthat (>= 2.1.0),
+Suggests:
+    beautier,
     knitr,
-    rmarkdown
+    rmarkdown,
+    testit,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
 URL: https://github.com/ropensci/mauricer
 BugReports: https://github.com/ropensci/mauricer/issues
