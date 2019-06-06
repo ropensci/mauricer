@@ -23,8 +23,8 @@ test_that("NS, deep", {
   # "Perhaps a package required for this class is not installed?"
   # ""
   # "Error detected about here:"
-  # "  <beast>"
-  # "      <run id='mcmc' spec='beast.gss.NS'>"
+  # "  <beast>"                                                                 # nolint this is commented code indeed
+  # "      <run id='mcmc' spec='beast.gss.NS'>"                                 # nolint this is commented code indeed
   #
   #
   # Here, we know that the output_filename holds a valid XML file,
@@ -37,7 +37,7 @@ test_that("NS, deep", {
     )
   )
 
-  i_want_to_see_the_beast2_output <- FALSE
+  i_want_to_see_the_beast2_output <- FALSE # nolint indeed a long variable name
   if (i_want_to_see_the_beast2_output) {
     suppressWarnings(
       beastier::is_beast2_input_file(
