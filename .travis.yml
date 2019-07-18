@@ -29,8 +29,8 @@ before_script:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R --quiet -e 'install.packages("rJava", type="source", repos="http://cran.us.r-project.org")'; fi
   # BEAST2. mauricer must work with and without BEAST2 installed
   - Rscript -e "beastier::install_beast2()"
-  # Install BEAST2 NS package
-  - Rscript -e "source(\"R/install_beast2_pkg.R\"); source(\"R/is_beast2_pkg_installed.R\"); source(\"R/get_beast2_pkg_names.R\"); install_beast2_pkg(\"NS\")"
+  # Do not install BEAST2 NS package, won't work anyways
+  # - Rscript -e "source(\"R/install_beast2_pkg.R\"); source(\"R/is_beast2_pkg_installed.R\"); source(\"R/get_beast2_pkg_names.R\"); install_beast2_pkg(\"NS\")"
   # lintr
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
   # proselint
