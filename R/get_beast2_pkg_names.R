@@ -26,8 +26,16 @@ get_beast2_pkg_names <- function() {
       "beast.util.PackageManager",
       "-list"
     ),
-    stdout = TRUE
+    stdout = TRUE,
+    stderr = FALSE
   )
+  if (length(raw) == 0) {
+    stop("No internet connection")
+    # Full error message:
+    #
+    # Error reading the following package repository URLs: https://raw.githubusercontent.com/CompEvol/CBAN/master/packages2.6.xml # nolint
+    # Could not get an internet connection. The BEAST Package Manager needs internet access in order to list available packages and download them for installation. Possibly, some software (like security software, or a firewall) blocks the BEAST Package Manager.  If so, you need to reconfigure such software to allow access. # nolint
+  }
   raw <- raw[c(-1, -2, -4)]
 
   df <- stringr::str_split(
