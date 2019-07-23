@@ -3,6 +3,7 @@ context("install_beast2_pkg")
 test_that("use", {
 
   if (!beastier::is_beast2_installed()) return()
+  if (!has_internet()) return()
 
   df <- get_beast2_pkg_names()
   name <- df[df$installed_version == "NA", ]$name[1]

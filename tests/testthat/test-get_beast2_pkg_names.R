@@ -2,6 +2,8 @@ context("get_beast2_pkg_names")
 
 test_that("use", {
   if (!beastier::is_beast2_installed()) return()
+  if (!has_internet()) return()
+
   df <- get_beast2_pkg_names()
   expect_true("name" %in% names(df))
   expect_true("installed_version" %in% names(df))
@@ -12,14 +14,7 @@ test_that("use", {
 
 test_that("no packages without internet", {
 
-  if (1 == 2) {
-    # Run this test without internet
-
-    # Check to see if there is internet,
-    # from https://stackoverflow.com/a/34970085
-    testit::assert(is.null(curl::nslookup("r-project.org", error = FALSE)))
-
-    # No internet, so it should return NULL
+  if (!has_internet()) {
     expect_error(
       get_beast2_pkg_names(),
       "No internet connection"
