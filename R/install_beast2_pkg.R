@@ -9,7 +9,7 @@
 #'   # and the package is not
 #'   if (is_on_travis() &&
 #'     is_beast2_installed()
-#'     && !is_beast2_pkg_installed("NS")
+#'     && isFALSE(is_beast2_pkg_installed("NS"))
 #'   ) {
 #'     install_beast2_pkg("NS")
 #'     expect_true(is_beast2_pkg_installed("NS"))

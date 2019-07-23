@@ -14,10 +14,7 @@ test_that("return NULL without internet", {
 
   if (1 == 2) {
     # Run this test without internet
-
-    # Check to see if there is internet,
-    # from https://stackoverflow.com/a/34970085
-    testit::assert(is.null(curl::nslookup("r-project.org", error = FALSE)))
+    testit::assert(!has_internet())
 
     # No internet, so it should return NULL
     expect_null(is_beast2_pkg_installed("NS"))

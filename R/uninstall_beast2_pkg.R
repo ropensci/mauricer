@@ -9,7 +9,7 @@
 #'   # and the package is not
 #'   if (is_on_travis() &&
 #'     is_beast2_installed()
-#'     && !is_beast2_pkg_installed("NS")
+#'     && isFALSE(is_beast2_pkg_installed("NS"))
 #'   ) {
 #'     install_beast2_pkg("NS")
 #'     expect_true(is_beast2_pkg_installed("NS"))
@@ -19,7 +19,10 @@
 #'   }
 #' @export
 uninstall_beast2_pkg <- function(name) {
-  if (!is_beast2_pkg_installed(name)) {
+  if (!has_internet()) {
+    stop("No internet connection")
+  }
+  if (isFALSE(is_beast2_pkg_installed(name))) {
     stop("Cannot uninstall absent package")
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
