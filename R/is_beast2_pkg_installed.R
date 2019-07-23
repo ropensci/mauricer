@@ -25,7 +25,7 @@
 #' }
 #' @export
 is_beast2_pkg_installed <- function(name) {
-  if (name == "NS") return(is_beast2_ns_pkg_installed())
+  if (name == "NS") return(is_beast2_ns_pkg_installed()) # nolint mauricer function
   if (!curl::has_internet()) return(NULL)
   df <- mauricer::get_beast2_pkg_names()
   df[df$name == name, ]$installed_version != "NA"
