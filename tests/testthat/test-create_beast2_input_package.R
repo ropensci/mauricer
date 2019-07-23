@@ -2,7 +2,7 @@
 test_that("NS, deep", {
 
   if (!beastier::is_beast2_installed()) return()
-  if (!has_internet()) return()
+  if (!curl::has_internet()) return()
   if (!is_beast2_ns_pkg_installed()) return()
 
   # We cannot test

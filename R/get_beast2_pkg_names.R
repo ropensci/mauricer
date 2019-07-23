@@ -6,7 +6,7 @@
 #' @examples
 #' library(testthat)
 #'
-#' if (is_beast2_installed() && has_internet()) {
+#' if (is_beast2_installed() && curl::has_internet()) {
 #'   df <- get_beast2_pkg_names()
 #'   expect_true("name" %in% names(df))
 #'   expect_true("installed_version" %in% names(df))
@@ -19,7 +19,7 @@ get_beast2_pkg_names <- function() {
   if (!beastier::is_beast2_installed()) {
     stop("BEAST2 not installed. Tip: use 'beastier::install_beast2()'")
   }
-  if (!has_internet()) {
+  if (!curl::has_internet()) {
     stop("No internet connection")
   }
   # java -cp beast.jar beast.util.PackageManager -list

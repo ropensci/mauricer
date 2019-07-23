@@ -15,7 +15,7 @@
 #' @examples
 #' library(testthat)
 #'
-#' if (is_beast2_installed() && has_internet()) {
+#' if (is_beast2_installed() && curl::has_internet()) {
 #'   print(
 #'     paste(
 #'       "Is the Beasy BEAST2 package installed:",
@@ -26,7 +26,7 @@
 #' @export
 is_beast2_pkg_installed <- function(name) {
   if (name == "NS") return(is_beast2_ns_pkg_installed())
-  if (!has_internet()) return(NULL)
+  if (!curl::has_internet()) return(NULL)
   df <- mauricer::get_beast2_pkg_names()
   df[df$name == name, ]$installed_version != "NA"
 }

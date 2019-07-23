@@ -2,7 +2,7 @@ context("get_beast2_pkg_names")
 
 test_that("use", {
   if (!beastier::is_beast2_installed()) return()
-  if (!has_internet()) return()
+  if (!curl::has_internet()) return()
 
   df <- get_beast2_pkg_names()
   expect_true("name" %in% names(df))
@@ -14,7 +14,7 @@ test_that("use", {
 
 test_that("no packages without internet", {
 
-  if (!has_internet()) {
+  if (!curl::has_internet()) {
     expect_error(
       get_beast2_pkg_names(),
       "No internet connection"

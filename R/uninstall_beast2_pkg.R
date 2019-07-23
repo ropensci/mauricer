@@ -9,7 +9,7 @@
 #' # and the package is not
 #' if (is_on_travis() &&
 #'   is_beast2_installed() &&
-#'   has_internet() &&
+#'   curl::has_internet() &&
 #'   !is_beast2_pkg_installed("Beasy")
 #' ) {
 #'   install_beast2_pkg("Beasy")
@@ -20,7 +20,7 @@
 #' }
 #' @export
 uninstall_beast2_pkg <- function(name) {
-  if (!has_internet()) {
+  if (!curl::has_internet()) {
     stop("No internet connection")
   }
   if (isFALSE(is_beast2_pkg_installed(name))) {

@@ -23,7 +23,7 @@ Without an internet connection, \code{NULL} is returned.
 \examples{
 library(testthat)
 
-if (is_beast2_installed() && has_internet()) {
+if (is_beast2_installed() && curl::has_internet()) {
   print(
     paste(
       "Is the Beasy BEAST2 package installed:",

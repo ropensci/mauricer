@@ -11,7 +11,6 @@ Newest versions at top.
 ### MINOR IMPROVEMENTS
 
   * Removed all deprecated functions; those starting with `mrc_`
-  * Added `has_internet` function
   * Added `is_beast2_ns_pkg_installed` that specifically checks if the BEAST
     NS package is installed, without needing an internet connection
    
