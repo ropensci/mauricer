@@ -9,20 +9,23 @@
 #'   \item \code{FALSE} if the BEAST2 package is not installed
 #'   \item \code{NULL} if there is no internet connection
 #' }
+#' @seealso Use \link{is_beast2_ns_pkg_installed}
+#'   to see if the NS package is installed without an internet connection
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#'   library(testthat)
+#' library(testthat)
 #'
-#'   if (is_beast2_installed()) {
-#'     print(
-#'       paste(
-#'         "Is the NS BEAST2 package installed:",
-#'         is_beast2_pkg_installed("NS")
-#'       )
+#' if (is_beast2_installed() && has_internet()) {
+#'   print(
+#'     paste(
+#'       "Is the Beasy BEAST2 package installed:",
+#'       is_beast2_pkg_installed("Beasy")
 #'     )
-#'   }
+#'   )
+#' }
 #' @export
 is_beast2_pkg_installed <- function(name) {
+  if (name == "NS") return(is_beast2_ns_pkg_installed())
   if (!has_internet()) return(NULL)
   df <- mauricer::get_beast2_pkg_names()
   df[df$name == name, ]$installed_version != "NA"

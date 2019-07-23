@@ -21,16 +21,20 @@ To be able to check this, an internet connection is needed.
 Without an internet connection, \code{NULL} is returned.
 }
 \examples{
-  library(testthat)
+library(testthat)
 
-  if (is_beast2_installed()) {
-    print(
-      paste(
-        "Is the NS BEAST2 package installed:",
-        is_beast2_pkg_installed("NS")
-      )
+if (is_beast2_installed() && has_internet()) {
+  print(
+    paste(
+      "Is the Beasy BEAST2 package installed:",
+      is_beast2_pkg_installed("Beasy")
     )
-  }
+  )
+}
+}
+\seealso{
+Use \link{is_beast2_ns_pkg_installed}
+  to see if the NS package is installed without an internet connection
 }
 \author{
 Richèl J.C. Bilderbeek

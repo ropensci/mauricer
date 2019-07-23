@@ -17,7 +17,7 @@ test_that("return NULL without internet", {
     testit::assert(!has_internet())
 
     # No internet, so it should return NULL
-    expect_null(is_beast2_pkg_installed("NS"))
+    expect_null(is_beast2_pkg_installed("irrelevant"))
   }
 
 })
