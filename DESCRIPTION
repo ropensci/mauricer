@@ -16,7 +16,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports:
-    beastier (>= v2.0.22),
+    beastier (>= 2.0.22),
     stringr
 Suggests:
     beautier,
