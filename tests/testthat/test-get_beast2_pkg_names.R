@@ -20,5 +20,25 @@ test_that("no packages without internet", {
       "No internet connection"
     )
   }
+})
+
+test_that("use", {
+  if (!beastier::is_beast2_installed()) return()
+  if (!curl::has_internet()) return()
+
+  testit::assert(beastier::is_beast2_installed())
+
+  beastier::uninstall_beast2()
+
+  testit::assert(!beastier::is_beast2_installed())
+
+  expect_error(
+    get_beast2_pkg_names(),
+    "BEAST2 not installed"
+  )
+
+  beastier::install_beast2()
+
+  testit::assert(beastier::is_beast2_installed())
 
 })
