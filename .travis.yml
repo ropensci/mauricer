@@ -20,9 +20,8 @@ r_github_packages:
   - MangoTheCat/goodpractice
   - ropensci/beautier@develop
   - ropensci/tracerer
-  - ropensci/beastier
+  - ropensci/beastier@develop
   - ropensci/spelling
-  - ropensci/beastier
 
 before_script:
   # if Linux, show distro
