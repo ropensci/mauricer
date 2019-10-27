@@ -15,6 +15,7 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Depends: beastier
 Imports:
     beastier (>= 2.0.25),
     stringr
