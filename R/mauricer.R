@@ -30,7 +30,5 @@
 #' }
 #' @docType package
 #' @name mauricer
-NULL
-
-# Load the packages this package Depends (see DESCRIPTION) on
 #' @import beastier
+NULL
