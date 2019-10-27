@@ -16,6 +16,7 @@
 #' @export
 is_beast2_ns_pkg_installed <- function() {
   beastier::is_beast2_input_file(
-    get_mrc_path("nested_sampling.xml"),
+    mauricer::get_mrc_path("nested_sampling.xml"),
+    show_warnings = FALSE
   )
 }
