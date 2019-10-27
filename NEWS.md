@@ -2,7 +2,7 @@
 
 Newest versions at top.
 
-## `mauricer` 2.0.4 (unreleased)
+## `mauricer` 2.0.4 (2019-10-27)
 
 ### NEW FEATURES
 
@@ -13,8 +13,6 @@ Newest versions at top.
   * Removed all deprecated functions; those starting with `mrc_`
   * Added `is_beast2_ns_pkg_installed` that specifically checks if the BEAST
     NS package is installed, without needing an internet connection
-   
-
 
 ### BUG FIXES
 
