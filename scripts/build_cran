@@ -8,6 +8,7 @@
 
 mkdir build
 
+cp ../.Rbuildignore build
 cp -r ../R build
 cp -r ../inst build
 cp -r ../man build

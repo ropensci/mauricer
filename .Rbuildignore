@@ -7,3 +7,4 @@
 ^pics$
 ^scripts$
 ^appveyor\.yml$
+^.*.tar.gz$
