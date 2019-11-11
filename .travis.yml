@@ -41,4 +41,6 @@ after_success:
   - # No local files created
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
   - # Do a CRAN build
+  - Rscript -e 'install.packages(c("beautier", "tracerer"))'
   - cd scripts; sh -x build_cran
+
