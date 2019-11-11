@@ -1,9 +1,9 @@
 language: r
 dist: bionic
-cache: packages
+# cache: packages
 
-r_packages:
-  - xml2
+#r_packages:
+#  - xml2
 
 matrix:
   include:
