@@ -22,13 +22,19 @@ Related packages:
 
  * [YouTube video about maurices](https://youtu.be/Yk737gorcrw)
 
+## FAQ
+
+### What is the `cran` branch?
+
+The `cran` branch branched off from v2.0.3, with the goal to get that older version on CRAN.
+
 ## Package dependencies
 
-Package|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
----|---|---
+Package                                         |[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)                                                        |[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
+------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
 [beastier](https://github.com/ropensci/beastier)|[![Build Status](https://travis-ci.org/ropensci/beastier.svg?branch=master)](https://travis-ci.org/ropensci/beastier)|[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beastier/branch/master)
 
-## Dependencies
+## Related packages
 
 Package                                         |[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)                                                        |[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
 ------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -37,12 +43,13 @@ Package                                         |[![Travis CI logo](pics/TravisC
 [lumier](https://github.com/ropensci/lumier)    |[![Build Status](https://travis-ci.org/ropensci/lumier.svg?branch=master)](https://travis-ci.org/ropensci/lumier)    |[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/lumier/branch/master)
 [tracerer](https://github.com/ropensci/tracerer)|[![Build Status](https://travis-ci.org/ropensci/tracerer.svg?branch=master)](https://travis-ci.org/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/tracerer/branch/master)
 
-## Windows testing
+## Related packages for Windows testing
 
 Package              | Status
 ---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 `beastier_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/ralex9sdnnxlwbgx/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/beastier-on-windows/branch/master)
 `beautier_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/blvjo5pulbkqxrhb/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/beautier-on-windows/branch/master)
+`mauricer_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/bc43iwp68xo2dduh/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer-on-windows/branch/master)
 `tracerer_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/jyhck66d6yrbr12h/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/tracerer-on-windows/branch/master)
 
 
