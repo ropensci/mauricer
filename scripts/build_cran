@@ -1,4 +1,11 @@
 #!/bin/bash
+#
+# Build mauricer as-if on CRAN
+#
+# Usage:
+#
+#   ./build_cran
+
 mkdir build
 
 cp -r ../R build
