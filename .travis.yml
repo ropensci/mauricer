@@ -19,10 +19,9 @@ r_github_packages:
   - jimhester/lintr
   - MangoTheCat/goodpractice
   - ropensci/spelling
-  # Do a CRAN build, depending on only CRAN packages
-  #- ropensci/beautier
-  #- ropensci/tracerer
-  #- ropensci/beastier
+  - ropensci/beautier
+  - ropensci/tracerer
+  - ropensci/beastier
 
 before_script:
   # if Linux, show distro
