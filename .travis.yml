@@ -1,9 +1,6 @@
 language: r
 dist: bionic
-# cache: packages
-
-#r_packages:
-#  - xml2
+cache: packages
 
 matrix:
   include:
@@ -11,13 +8,12 @@ matrix:
     os: linux
   - r: devel
     os: linux
-  - r: release
-    os: osx
+  #- r: release
+  #  os: osx
 
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
-  - MangoTheCat/goodpractice
   - ropensci/spelling
   - ropensci/beautier
   - ropensci/tracerer
