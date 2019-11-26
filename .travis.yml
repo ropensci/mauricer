@@ -8,8 +8,8 @@ matrix:
     os: linux
   - r: devel
     os: linux
-  #- r: release
-  #  os: osx
+  - r: release
+    os: osx
 
 r_github_packages:
   - jimhester/covr
@@ -32,13 +32,13 @@ before_script:
   # lintr
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
   # proselint
-  - sudo pip install proselint
+  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then sudo pip install proselint; fi
 
 after_success:
   - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then Rscript -e "lintr::lint_package()"; fi
   - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then Rscript -e "covr::codecov()"; fi
   - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then travis_wait 20 Rscript -e "goodpractice::gp()"; fi
-  - proselint *.md | egrep -v "typography\.symbols\.curly_quotes"
+  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then proselint *.md | egrep -v "typography\.symbols\.curly_quotes"; fi
   - # No local files created
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
   - # Do a CRAN build
