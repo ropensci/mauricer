@@ -15,8 +15,8 @@ r_github_packages:
   - jimhester/covr
   - jimhester/lintr
   - ropensci/spelling
-  - ropensci/tracerer
-  - ropensci/beastier
+  - # ropensci/tracerer
+  - # ropensci/beastier
 
 before_script:
   # if Linux, show distro
