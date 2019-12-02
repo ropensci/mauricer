@@ -18,7 +18,10 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-`mauricer` is an R package to handle BEAST2 package management from R.
+`mauricer` is an R package to handle BEAST2 package management from R,
+similar to the BEAST2 package manager.
+
+![The BEAST2 package manager](beast2_pkg_manager.png)
 
 In this vignette, we will:
 
