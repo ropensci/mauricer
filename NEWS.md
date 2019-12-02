@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.5 (2019-12-02)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Add vignette
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.0.4 (2019-10-27)
 
 ### NEW FEATURES
