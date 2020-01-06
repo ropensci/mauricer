@@ -2,6 +2,26 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.6 (2020-01-06)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Documentation at [rOpenSci](https://docs.ropensci.org/mauricer) to
+    shows pictures
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
+
 ## `mauricer` 2.0.5 (2019-12-02)
 
 ### NEW FEATURES
