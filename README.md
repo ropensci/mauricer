@@ -1,6 +1,9 @@
 # mauricer
 
 [![Peer Review Status](https://badges.ropensci.org/209_status.svg)](https://github.com/ropensci/onboarding/issues/209)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mauricer)](https://cran.r-project.org/package=mauricer)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/mauricer)]( https://CRAN.R-project.org/package=mauricer)
+[![](http://cranlogs.r-pkg.org/badges/mauricer)](https://CRAN.R-project.org/package=mauricer)
 
 Branch   |[![Travis CI logo](man/figures/TravisCI.png)](https://travis-ci.org)                                                  |[![AppVeyor logo](man/figures/AppVeyor.png)](https://www.appveyor.com)                                                                                                                     |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
 ---------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------
