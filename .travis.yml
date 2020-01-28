@@ -12,6 +12,9 @@ matrix:
     os: osx
     osx_image: xcode9.2
 
+r_packages:
+  - tracerer
+
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
