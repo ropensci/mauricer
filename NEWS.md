@@ -11,6 +11,7 @@ Newest versions at top.
 ### MINOR IMPROVEMENTS
 
   * Use https of BEAST2 website
+  * Builds on MacOS again
 
 ### BUG FIXES
 
