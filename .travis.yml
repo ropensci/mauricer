@@ -10,13 +10,12 @@ matrix:
     os: linux
   - r: release
     os: osx
+    osx_image: xcode9.2
 
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
   - ropensci/spelling
-  #- ropensci/tracerer
-  #- ropensci/beastier
 
 before_script:
   # if Linux, show distro
@@ -24,6 +23,9 @@ before_script:
   # Java
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R CMD javareconf; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R --quiet -e 'install.packages("rJava", type="source", repos="http://cran.us.r-project.org")'; fi
+  # PDF
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo tlmgr update --self; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo tlmgr install inconsolata; fi
   # BEAST2. mauricer must work with and without BEAST2 installed
   - Rscript -e "beastier::install_beast2()"
   # Do not install BEAST2 NS package, won't work anyways

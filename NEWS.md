@@ -2,6 +2,25 @@
 
 Newest versions at top.
 
+## `mauricer` 2.0.7 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Use https of BEAST2 website
+  * Builds on MacOS again
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.0.6 (2020-01-06)
 
 ### NEW FEATURES
@@ -20,7 +39,6 @@ Newest versions at top.
 ### DEPRECATED AND DEFUNCT
 
   * None
-
 
 ## `mauricer` 2.0.5 (2019-12-02)
 
