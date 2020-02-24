@@ -3,7 +3,6 @@
 \docType{package}
 \name{mauricer}
 \alias{mauricer}
-\alias{mauricer-package}
 \title{mauricer: Install BEAST2 packages.}
 \description{
 'BEAST2' (<http://www.beast2.org>) is a widely used

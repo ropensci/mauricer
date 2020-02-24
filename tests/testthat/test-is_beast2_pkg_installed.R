@@ -23,12 +23,11 @@ test_that("can install NS in two equivalent ways", {
 
 test_that("return NULL without internet", {
 
-  if (1 == 2) {
-    # Run this test without internet
-    testit::assert(!curl::has_internet())
-
-    # No internet, so it should return NULL
-    expect_null(is_beast2_pkg_installed("irrelevant"))
-  }
-
+  # No internet, so it should return NULL
+  expect_null(
+    is_beast2_pkg_installed(
+      "irrelevant",
+      has_internet = FALSE
+    )
+  )
 })
