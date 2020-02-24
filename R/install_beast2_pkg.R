@@ -1,5 +1,5 @@
 #' Install a BEAST2 package
-#' @param name the package's name
+#' @inheritParams default_params_doc
 #' @return nothing. It does install the BEAST2 package
 #' @author Richèl J.C. Bilderbeek
 #' @examples

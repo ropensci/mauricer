@@ -2,10 +2,7 @@
 #'
 #' To be able to check this, an internet connection is needed.
 #' Without an internet connection, \code{NULL} is returned.
-#' @param name BEAST2 package name
-#' @param has_internet boolean to indicate if the user has access to the
-#'   internet. By default, this value equals the result
-#'   of \link[curl]{has_internet}
+#' @inheritParams default_params_doc
 #' @return
 #' \itemize{
 #'   \item \code{TRUE} if the BEAST2 package is installed
