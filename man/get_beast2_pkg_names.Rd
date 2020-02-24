@@ -4,7 +4,7 @@
 \alias{get_beast2_pkg_names}
 \title{List all BEAST2 packages available and installed}
 \usage{
-get_beast2_pkg_names()
+get_beast2_pkg_names(has_internet = curl::has_internet())
 }
 \value{
 a data frame
