@@ -7,8 +7,19 @@ test_that("cannot uninstall absent package", {
 
   df <- get_beast2_pkg_names()
   absent_package_name <- df[df$installed_version == "NA", ]$name[1]
-  testthat::expect_error(
+  expect_error(
     uninstall_beast2_pkg(absent_package_name),
     "Cannot uninstall absent package"
+  )
+})
+
+test_that("abuse", {
+
+  expect_error(
+    uninstall_beast2_pkg(
+      "irrelevant",
+      has_internet = FALSE
+    ),
+    "No internet connection"
   )
 })
