@@ -1,6 +1,7 @@
 #' List all BEAST2 packages available and installed
 #'
 #' Will \link{stop} if there is no internet connection
+#' @inheritParams default_params_doc
 #' @return a data frame
 #' @author Richèl J.C. Bilderbeek
 #' @examples
