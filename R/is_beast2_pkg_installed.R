@@ -2,7 +2,7 @@
 #'
 #' To be able to check this, an internet connection is needed.
 #' Without an internet connection, \code{NULL} is returned.
-#' @param name BEAST2 package name
+#' @inheritParams default_params_doc
 #' @return
 #' \itemize{
 #'   \item \code{TRUE} if the BEAST2 package is installed
@@ -24,9 +24,12 @@
 #'   )
 #' }
 #' @export
-is_beast2_pkg_installed <- function(name) {
+is_beast2_pkg_installed <- function(
+  name,
+  has_internet = curl::has_internet()
+) {
   if (name == "NS") return(mauricer::is_beast2_ns_pkg_installed())
-  if (!curl::has_internet()) return(NULL)
+  if (!has_internet) return(NULL)
   df <- mauricer::get_beast2_pkg_names()
   df[df$name == name, ]$installed_version != "NA"
 }

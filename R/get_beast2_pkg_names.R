@@ -1,6 +1,7 @@
 #' List all BEAST2 packages available and installed
 #'
 #' Will \link{stop} if there is no internet connection
+#' @inheritParams default_params_doc
 #' @return a data frame
 #' @author Richèl J.C. Bilderbeek
 #' @examples
@@ -15,11 +16,13 @@
 #'   expect_true("description" %in% names(df))
 #' }
 #' @export
-get_beast2_pkg_names <- function() {
+get_beast2_pkg_names <- function(
+  has_internet = curl::has_internet()
+) {
   if (!beastier::is_beast2_installed()) {
     stop("BEAST2 not installed. Tip: use 'beastier::install_beast2()'")
   }
-  if (!curl::has_internet()) {
+  if (!has_internet) {
     stop("No internet connection")
   }
   # java -cp beast.jar beast.util.PackageManager -list

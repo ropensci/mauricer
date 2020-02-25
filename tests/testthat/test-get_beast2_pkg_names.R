@@ -14,12 +14,12 @@ test_that("use", {
 
 test_that("no packages without internet", {
 
-  if (!curl::has_internet()) {
-    expect_error(
-      get_beast2_pkg_names(),
-      "No internet connection"
-    )
-  }
+  expect_error(
+    get_beast2_pkg_names(
+      has_internet = FALSE
+    ),
+    "No internet connection"
+  )
 })
 
 test_that("use", {
