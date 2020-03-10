@@ -9,7 +9,9 @@ This GitHub follows the [Contributor Covenant Code of Conduct](code_of_conduct.m
 
 ## Which package to contribute to?
 
-`babette` consists out of five packages.
+`maurcer` is part of the `babette` package suite,
+which consists out of five packages.
+Here is how to determine which package is best suited for your contribution:
 
 If you want to contribute to the creation of BEAST2 XML input file,
 go to [beautier](https://github.com/ropensci/beautier/blob/master/CONTRIBUTING.md).
