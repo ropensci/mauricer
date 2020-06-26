@@ -5,5 +5,7 @@
 ^pics$
 ^scripts$
 ^appveyor\.yml$
-.github
-LICENSE
+^.github$
+^LICENSE$
+^CODE_OF_CONDUCT.md$
+^CONTRIBUTING.md$
