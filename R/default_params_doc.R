@@ -2,7 +2,7 @@
 #' documentation.
 #' @param has_internet boolean to indicate if the user has access to the
 #'   internet. By default, this value equals the result
-#'   of \link[curl]{has_internet}
+#'   of \code{curl::has_internet}
 #' @param name the package's name
 #' @author Richèl J.C. Bilderbeek
 #' @note This is an internal function, so it should be marked with

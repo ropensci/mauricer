@@ -9,7 +9,7 @@ get_beast2_pkg_names(has_internet = curl::has_internet())
 \arguments{
 \item{has_internet}{boolean to indicate if the user has access to the
 internet. By default, this value equals the result
-of \link[curl]{has_internet}}
+of \code{curl::has_internet}}
 }
 \value{
 a data frame

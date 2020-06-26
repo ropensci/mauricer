@@ -11,7 +11,7 @@ is_beast2_pkg_installed(name, has_internet = curl::has_internet())
 
 \item{has_internet}{boolean to indicate if the user has access to the
 internet. By default, this value equals the result
-of \link[curl]{has_internet}}
+of \code{curl::has_internet}}
 }
 \value{
 \itemize{
