@@ -16,6 +16,8 @@ r_packages:
   - tracerer
 
 r_github_packages:
+  - richelbilderbeek/beautier
+  - richelbilderbeek/beastier
   - jimhester/covr
   - jimhester/lintr
   - ropensci/spelling
