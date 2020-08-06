@@ -2,7 +2,7 @@
 % Please edit documentation in R/is_beast2_pkg_installed.R
 \name{is_beast2_pkg_installed}
 \alias{is_beast2_pkg_installed}
-\title{Checks if a BEAST2 package is already installed.}
+\title{Is a BEAST2 package installed?}
 \usage{
 is_beast2_pkg_installed(name, has_internet = curl::has_internet())
 }
@@ -21,6 +21,9 @@ of \code{curl::has_internet}}
 }
 }
 \description{
+Checks if a BEAST2 package is installed.
+}
+\details{
 To be able to check this, an internet connection is needed.
 Without an internet connection, \code{NULL} is returned.
 }

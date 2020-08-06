@@ -1,4 +1,6 @@
-#' Checks if a BEAST2 package is already installed.
+#' Is a BEAST2 package installed?
+#'
+#' Checks if a BEAST2 package is installed.
 #'
 #' To be able to check this, an internet connection is needed.
 #' Without an internet connection, \code{NULL} is returned.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/is_beast2_ns_pkg_installed.R
 \name{is_beast2_ns_pkg_installed}
 \alias{is_beast2_ns_pkg_installed}
-\title{Determine if the BEAST2 NS package is installed}
+\title{Is the BEAST2 NS package installed?}
 \usage{
 is_beast2_ns_pkg_installed()
 }
@@ -10,7 +10,13 @@ is_beast2_ns_pkg_installed()
 TRUE if the BEAST2 NS package is installed, FALSE otherwise
 }
 \description{
-Determine if the BEAST2 NS package is installed
+Determine if the BEAST2 NS package is installed.
+}
+\details{
+Unlike \link{is_beast2_pkg_installed},
+this function does not need an internet connection.
+Instead, the function calls BEAST2 to read a BEAST2 XML file that
+uses NS.
 }
 \examples{
 \dontrun{
