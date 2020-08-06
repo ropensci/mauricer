@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_beast2_pkg_names.R
 \name{get_beast2_pkg_names}
 \alias{get_beast2_pkg_names}
-\title{List all BEAST2 packages available and installed}
+\title{Get all BEAST2 package names}
 \usage{
 get_beast2_pkg_names(has_internet = curl::has_internet())
 }
@@ -12,21 +12,27 @@ internet. By default, this value equals the result
 of \code{curl::has_internet}}
 }
 \value{
-a data frame
+a data frame with columns\cr
+\enumerate{
+  \item name package name, for example, code{bdmm}
+  \item installed_version the installed version, for example, \code{2.6.2}.
+    \code{installed_version} will be NA if the package is not installed
+  \item latest_version version number of the latest version, for example,
+    \code{2.6.3}
+  \item dependencies packages the package depends on, for example
+    \code{BEASTLabs, GEO_SPHERE}. \code{dependencies} will be empty if there
+    are no dependencies
+  \item description description of the package, for example
+    \code{Nested sampling for model selection and posterior inference}
+}
 }
 \description{
+List all BEAST2 packages that are available and installed.
 Will \link{stop} if there is no internet connection
 }
 \examples{
-library(testthat)
-
 if (is_beast2_installed() && curl::has_internet()) {
-  df <- get_beast2_pkg_names()
-  expect_true("name" \%in\% names(df))
-  expect_true("installed_version" \%in\% names(df))
-  expect_true("latest_version" \%in\% names(df))
-  expect_true("dependencies" \%in\% names(df))
-  expect_true("description" \%in\% names(df))
+  get_beast2_pkg_names()
 }
 }
 \author{

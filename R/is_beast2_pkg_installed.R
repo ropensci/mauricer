@@ -13,15 +13,8 @@
 #'   to see if the NS package is installed without an internet connection
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#' library(testthat)
-#'
-#' if (is_beast2_installed() && curl::has_internet()) {
-#'   print(
-#'     paste(
-#'       "Is the Beasy BEAST2 package installed:",
-#'       is_beast2_pkg_installed("Beasy")
-#'     )
-#'   )
+#' \dontrun{
+#'   is_beast2_pkg_installed("Beasy")
 #' }
 #' @export
 is_beast2_pkg_installed <- function(

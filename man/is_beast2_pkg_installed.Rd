@@ -25,15 +25,8 @@ To be able to check this, an internet connection is needed.
 Without an internet connection, \code{NULL} is returned.
 }
 \examples{
-library(testthat)
-
-if (is_beast2_installed() && curl::has_internet()) {
-  print(
-    paste(
-      "Is the Beasy BEAST2 package installed:",
-      is_beast2_pkg_installed("Beasy")
-    )
-  )
+\dontrun{
+  is_beast2_pkg_installed("Beasy")
 }
 }
 \seealso{

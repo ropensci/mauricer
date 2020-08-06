@@ -1,5 +1,3 @@
-context("install_beast2_pkg")
-
 test_that("use", {
 
   if (!beastier::is_beast2_installed()) return()
@@ -31,5 +29,17 @@ test_that("cannot install installed package", {
   expect_error(
     install_beast2_pkg(present_package_name),
     "Cannot install installed package"
+  )
+})
+
+test_that("cannot install nonsense package", {
+
+  # This test needs internet connection
+  if (!beastier::is_on_ci()) return()
+  if (!beastier::is_beast2_installed()) return()
+
+  expect_error(
+    install_beast2_pkg("nonsense"),
+    "Invalid package name 'nonsense'"
   )
 })

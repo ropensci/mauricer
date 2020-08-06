@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_paths.R
 \name{get_mrc_paths}
 \alias{get_mrc_paths}
-\title{Get the full paths of files in the 'inst/extdata' folder}
+\title{Get the full path of one or more \code{mauricer} files}
 \usage{
 get_mrc_paths(filenames)
 }
@@ -10,17 +10,15 @@ get_mrc_paths(filenames)
 \item{filenames}{the files' names, without the path}
 }
 \value{
-the filenames' full paths, if and only if
-  all files are present. Will stop otherwise.
+the filenames' full paths
 }
 \description{
-Get the full paths of files in the 'inst/extdata' folder
+Get the full paths of files in the \code{inst/extdata} folder
+If there is a \code{mauricer} file absent,
+\link{get_mrc_paths} will \link{stop}.
 }
 \examples{
-  filenames <- get_mrc_paths(c("anthus_aco_sub.fas", "anthus_nd2_sub.fas"))
-
-  library(testthat)
-  expect_true(all(file.exists(filenames)))
+get_mrc_paths(c("anthus_aco_sub.fas", "anthus_nd2_sub.fas"))
 }
 \seealso{
 for one file, use \code{\link{get_mrc_path}}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_path.R
 \name{get_mrc_path}
 \alias{get_mrc_path}
-\title{Get the full path of a file in the \code{inst/extdata} folder}
+\title{Get the full path of a \code{mauricer} file}
 \usage{
 get_mrc_path(filename)
 }
@@ -14,13 +14,11 @@ the full path of the filename, if and only if
   the file is present. Will stop otherwise.
 }
 \description{
-Get the full path of a file in the \code{inst/extdata} folder
+Get the full path of a file in the \code{inst/extdata} folder.
+If there is no \code{mauricer} file, \link{get_mrc_path} will \link{stop}.
 }
 \examples{
-  library(testthat)
-
-  expect_true(file.exists(get_mrc_path("anthus_aco_sub.fas")))
-  expect_true(file.exists(get_mrc_path("anthus_nd2_sub.fas")))
+get_mrc_path("anthus_aco_sub.fas")
 }
 \seealso{
 for more files, use \code{\link{get_mrc_paths}}

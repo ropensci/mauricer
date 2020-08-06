@@ -13,19 +13,12 @@ install_beast2_pkg(name)
 nothing. It does install the BEAST2 package
 }
 \description{
-Install a BEAST2 package
+Install a BEAST2 package. If the package is already installed,
+(see \link{is_beast2_pkg_installed}), this function \link{stop}s.
 }
 \examples{
-library(testthat)
-
-# Only install a package on Travis,
-# if BEAST2 is installed and the package is not
-if (is_on_travis() &&
-  is_beast2_installed()
-  && !is_beast2_ns_pkg_installed()
-) {
+\dontrun{
   install_beast2_pkg("NS")
-  expect_true(is_beast2_ns_pkg_installed())
 }
 }
 \author{

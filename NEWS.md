@@ -12,6 +12,8 @@ Newest versions at top.
 
   * Use https of BEAST2 website
   * Builds on MacOS again
+  * `install_beast2_pkg` gives better error message when a 
+    non-existing/misspelled package is requested to be installed
 
 ### BUG FIXES
 
