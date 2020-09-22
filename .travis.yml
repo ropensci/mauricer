@@ -21,15 +21,19 @@ r_github_packages:
   - jimhester/lintr
   - ropensci/spelling
 
+before_install:
+  # Fix rJava error, from https://travis-ci.community/t/cannot-connect-to-java-from-r/9754/8
+  - sudo $(which R) CMD javareconf
+
 before_script:
-  # if Linux, show distro
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cat /proc/version; fi
   # Java
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R CMD javareconf; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R --quiet -e 'install.packages("rJava", type="source", repos="http://cran.us.r-project.org")'; fi
   # PDF
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo tlmgr update --self; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo tlmgr install inconsolata; fi
+  # Lapack
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install liblapack-dev; fi
   # BEAST2. mauricer must work with and without BEAST2 installed
   - Rscript -e "beastier::install_beast2()"
   # Do not install BEAST2 NS package, won't work anyways
