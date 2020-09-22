@@ -21,10 +21,6 @@ r_github_packages:
   - jimhester/lintr
   - ropensci/spelling
 
-before_install:
-  # From https://stackoverflow.com/a/20042195
-  - Rscript -e "update.packages(checkBuilt = TRUE, ask = FALSE)"
-
 before_script:
   # if Linux, show distro
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cat /proc/version; fi
