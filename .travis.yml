@@ -7,9 +7,8 @@ matrix:
     os: linux
   - r: devel
     os: linux
-  - r: release
-    os: osx
-    #osx_image: xcode9.2
+  #- r: release
+  #  os: osx
 
 r_packages:
   - tracerer
