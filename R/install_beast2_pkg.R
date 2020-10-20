@@ -12,11 +12,11 @@
 #' @export
 install_beast2_pkg <- function(
   name,
-  folder_name = beastier::get_default_beast2_folder(),
+  beast2_folder = beastier::get_default_beast2_folder(),
   has_internet = curl::has_internet()
 ) {
-  if (!name %in% get_beast2_pkg_names(
-      folder_name = folder_name,
+  if (!name %in% mauricer::get_beast2_pkg_names(
+      beast2_folder = beast2_folder,
       has_internet = has_internet
     )$name
   ) {
@@ -25,7 +25,10 @@ install_beast2_pkg <- function(
       "Tip: use 'get_beast2_pkg_names' to see all BEAST2 package names"
     )
   }
-  if (mauricer::is_beast2_pkg_installed(name)) {
+  if (mauricer::is_beast2_pkg_installed(
+    name = name,
+    beast2_folder = beast2_folder)
+  ) {
     stop("Cannot install installed package")
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
@@ -33,7 +36,9 @@ install_beast2_pkg <- function(
     command = beastier::get_default_java_path(),
     args = c(
       "-cp",
-      shQuote(beastier::get_default_beast2_jar_path()),
+      shQuote(
+        beastier::get_default_beast2_jar_path(beast2_folder = beast2_folder)
+      ),
       "beast.util.PackageManager",
       "-add",
       name

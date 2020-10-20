@@ -23,13 +23,13 @@
 #' }
 #' @export
 get_beast2_pkg_names <- function(
-  folder_name = beastier::get_default_beast2_folder(),
+  beast2_folder = beastier::get_default_beast2_folder(),
   has_internet = curl::has_internet()
 ) {
   if (!has_internet) {
     stop("No internet connection")
   }
-  if (!beastier::is_beast2_installed(folder_name = folder_name)) {
+  if (!beastier::is_beast2_installed(folder_name = beast2_folder)) {
     stop("BEAST2 not installed. Tip: use 'beastier::install_beast2()'")
   }
   jar_file_path <- beastier::get_default_beast2_jar_path(

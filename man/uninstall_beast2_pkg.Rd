@@ -4,7 +4,11 @@
 \alias{uninstall_beast2_pkg}
 \title{Uninstall a BEAST2 package}
 \usage{
-uninstall_beast2_pkg(name, has_internet = curl::has_internet())
+uninstall_beast2_pkg(
+  name,
+  beast2_folder = beastier::get_default_beast2_folder(),
+  has_internet = curl::has_internet()
+)
 }
 \arguments{
 \item{name}{the package's name}

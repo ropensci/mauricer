@@ -9,12 +9,15 @@
 #' @export
 uninstall_beast2_pkg <- function(
   name,
+  beast2_folder = beastier::get_default_beast2_folder(),
   has_internet = curl::has_internet()
 ) {
   if (!has_internet) {
     stop("No internet connection")
   }
-  if (isFALSE(is_beast2_pkg_installed(name))) {
+  if (
+    isFALSE(is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder))
+  ) {
     stop("Cannot uninstall absent package")
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
@@ -22,7 +25,9 @@ uninstall_beast2_pkg <- function(
     command = beastier::get_default_java_path(),
     args = c(
       "-cp",
-      shQuote(beastier::get_default_beast2_jar_path()),
+      shQuote(
+        beastier::get_default_beast2_jar_path(beast2_folder = beast2_folder)
+      ),
       "beast.util.PackageManager",
       "-del",
       name

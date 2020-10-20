@@ -6,7 +6,7 @@
 \usage{
 is_beast2_pkg_installed(
   name,
-  beast2_path = beastier::get_default_beast2_path(),
+  beast2_folder = beastier::get_default_beast2_folder(),
   has_internet = curl::has_internet()
 )
 }
