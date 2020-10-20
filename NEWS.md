@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.2 (unreleased)
+
+### NEW FEATURES
+
+  * Can install BEAST2 packages when BEAST2 is installed at a custom location
+
+### MINOR IMPROVEMENTS
+
+  * None
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.1 (2020-08-05)
 
 ### NEW FEATURES

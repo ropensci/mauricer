@@ -5,9 +5,19 @@
 \title{This function does nothing. It is intended to inherit is parameters'
 documentation.}
 \usage{
-default_params_doc(has_internet, name)
+default_params_doc(beast2_folder, has_internet, name)
 }
 \arguments{
+\item{beast2_folder}{the folder where the BEAST2 is installed.
+Note that this is not the folder where the BEAST2 executable is installed:
+the BEAST2 executable is in a subfolder.
+Use \link[beastier]{get_default_beast2_folder}
+  to get the default BEAST2 folder.
+Use \link[beastier]{get_default_beast2_bin_path}
+  to get the full path to the default BEAST2 executable.
+Use \link[beastier]{get_default_beast2_jar_path}
+  to get the full path to the default BEAST2 jar file.}
+
 \item{has_internet}{boolean to indicate if the user has access to the
 internet. By default, this value equals the result
 of \code{curl::has_internet}}
