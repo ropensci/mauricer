@@ -10,8 +10,16 @@
 #'   install_beast2_pkg("NS")
 #' }
 #' @export
-install_beast2_pkg <- function(name) {
-  if (!name %in% get_beast2_pkg_names()$name) {
+install_beast2_pkg <- function(
+  name,
+  folder_name = beastier::get_default_beast2_folder(),
+  has_internet = curl::has_internet()
+) {
+  if (!name %in% get_beast2_pkg_names(
+      folder_name = folder_name,
+      has_internet = has_internet
+    )$name
+  ) {
     stop(
       "Invalid package name '", name, "'. \n",
       "Tip: use 'get_beast2_pkg_names' to see all BEAST2 package names"

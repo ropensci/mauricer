@@ -16,7 +16,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Depends: 
-    beastier
+    beastier (>= 2.2.1)
 Imports:
     curl,
     stringr

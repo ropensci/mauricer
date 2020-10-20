@@ -21,10 +21,14 @@
 #' @export
 is_beast2_pkg_installed <- function(
   name,
+  beast2_path = beastier::get_default_beast2_path(),
   has_internet = curl::has_internet()
 ) {
-  if (name == "NS") return(mauricer::is_beast2_ns_pkg_installed())
   if (!has_internet) return(NULL)
-  df <- mauricer::get_beast2_pkg_names()
+  if (name == "NS") return(
+    mauricer::is_beast2_ns_pkg_installed(beast2_path = beast2_path)
+  )
+  folder_name <- dirname(dirname(dirname(beast2_path)))
+  df <- mauricer::get_beast2_pkg_names(folder_name = folder_name)
   df[df$name == name, ]$installed_version != "NA"
 }

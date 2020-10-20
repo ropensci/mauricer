@@ -4,7 +4,11 @@
 \alias{is_beast2_pkg_installed}
 \title{Is a BEAST2 package installed?}
 \usage{
-is_beast2_pkg_installed(name, has_internet = curl::has_internet())
+is_beast2_pkg_installed(
+  name,
+  beast2_path = beastier::get_default_beast2_path(),
+  has_internet = curl::has_internet()
+)
 }
 \arguments{
 \item{name}{the package's name}

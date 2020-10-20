@@ -6,6 +6,7 @@
 #' this function does not need an internet connection.
 #' Instead, the function calls BEAST2 to read a BEAST2 XML file that
 #' uses NS.
+#' @inheritParams beastier::is_beast2_input_file
 #' @return TRUE if the BEAST2 NS package is installed, FALSE otherwise
 #' @author Richèl J.C. Bilderbeek
 #' @examples
@@ -13,9 +14,20 @@
 #'   is_beast2_ns_pkg_installed()
 #' }
 #' @export
-is_beast2_ns_pkg_installed <- function() {
-  beastier::is_beast2_input_file(
-    mauricer::get_mrc_path("nested_sampling.xml"),
-    show_warnings = FALSE
+is_beast2_ns_pkg_installed <- function(
+  show_warnings = FALSE,
+  verbose = FALSE,
+  beast2_path = beastier::get_default_beast2_path()
+) {
+  result <- FALSE
+  tryCatch({
+    result <- beastier::is_beast2_input_file(
+      mauricer::get_mrc_path("nested_sampling.xml"),
+      show_warnings = show_warnings,
+      verbose = verbose,
+      beast2_path = beast2_path
+    )
+  }, error = function(e) {} # nolint do nothing
   )
+  result
 }

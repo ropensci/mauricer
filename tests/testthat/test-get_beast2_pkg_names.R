@@ -1,5 +1,3 @@
-context("get_beast2_pkg_names")
-
 test_that("use", {
   if (!beastier::is_beast2_installed()) return()
   if (!curl::has_internet()) return()

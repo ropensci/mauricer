@@ -4,7 +4,10 @@
 \alias{get_beast2_pkg_names}
 \title{Get all BEAST2 package names}
 \usage{
-get_beast2_pkg_names(has_internet = curl::has_internet())
+get_beast2_pkg_names(
+  folder_name = beastier::get_default_beast2_folder(),
+  has_internet = curl::has_internet()
+)
 }
 \arguments{
 \item{has_internet}{boolean to indicate if the user has access to the

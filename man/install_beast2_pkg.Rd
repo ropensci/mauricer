@@ -4,10 +4,18 @@
 \alias{install_beast2_pkg}
 \title{Install a BEAST2 package}
 \usage{
-install_beast2_pkg(name)
+install_beast2_pkg(
+  name,
+  folder_name = beastier::get_default_beast2_folder(),
+  has_internet = curl::has_internet()
+)
 }
 \arguments{
 \item{name}{the package's name}
+
+\item{has_internet}{boolean to indicate if the user has access to the
+internet. By default, this value equals the result
+of \code{curl::has_internet}}
 }
 \value{
 nothing. It does install the BEAST2 package
