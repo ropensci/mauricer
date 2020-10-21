@@ -13,6 +13,8 @@
 #'   internet. By default, this value equals the result
 #'   of \code{curl::has_internet}
 #' @param name the package's name
+#' @param show_warnings set to TRUE to show warnings
+#' @param verbose set to TRUE for extra output, as can be used in debugging
 #' @author Richèl J.C. Bilderbeek
 #' @note This is an internal function, so it should be marked with
 #'   \code{@noRd}. This is not done, as this will disallow all
@@ -20,7 +22,10 @@
 default_params_doc <- function(
   beast2_folder,
   has_internet,
-  name
+  name,
+  show_warnings,
+  verbose
 ) {
   # Nothing
 }
+

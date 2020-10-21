@@ -5,7 +5,7 @@
 \title{This function does nothing. It is intended to inherit is parameters'
 documentation.}
 \usage{
-default_params_doc(beast2_folder, has_internet, name)
+default_params_doc(beast2_folder, has_internet, name, show_warnings, verbose)
 }
 \arguments{
 \item{beast2_folder}{the folder where the BEAST2 is installed.
@@ -23,6 +23,10 @@ internet. By default, this value equals the result
 of \code{curl::has_internet}}
 
 \item{name}{the package's name}
+
+\item{show_warnings}{set to TRUE to show warnings}
+
+\item{verbose}{set to TRUE for extra output, as can be used in debugging}
 }
 \description{
 This function does nothing. It is intended to inherit is parameters'
