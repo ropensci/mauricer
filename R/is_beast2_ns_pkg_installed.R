@@ -25,7 +25,7 @@ is_beast2_ns_pkg_installed <- function(
       mauricer::get_mrc_path("nested_sampling.xml"),
       show_warnings = show_warnings,
       verbose = verbose,
-      beast2_path = beast2_folder
+      beast2_path = beastier::get_default_beast2_bin_path(beast2_folder)
     )
   }, error = function(e) {} # nolint do nothing
   )

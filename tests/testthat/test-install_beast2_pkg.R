@@ -42,7 +42,7 @@ test_that("cannot install nonsense package", {
   )
 })
 
-test_that("install at non-standard location", {
+test_that("install and uninstall at non-standard location", {
 
   if (!beastier::is_beast2_installed()) return()
   if (!curl::has_internet()) return()
