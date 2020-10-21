@@ -37,6 +37,10 @@ test_that("install bacter package at non-standard location", {
 
   beast2_folder <- tempfile()
   beastier::install_beast2(folder_name = beast2_folder)
-  mauricer::install_beast2_pkg(name = "bacter", beast2_folder = beast2_folder)
-  expect_true(is_beast2_pkg_installed(name = "bacter", beast2_folder = beast2_folder))
+  mauricer::install_beast2_pkg(
+    name = "bacter", beast2_folder = beast2_folder
+  )
+  expect_true(
+    is_beast2_pkg_installed(name = "bacter", beast2_folder = beast2_folder)
+  )
 })

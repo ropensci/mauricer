@@ -28,4 +28,3 @@ default_params_doc <- function(
 ) {
   # Nothing
 }
-

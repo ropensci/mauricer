@@ -55,9 +55,13 @@ test_that("install and uninstall at non-standard location", {
 
   install_beast2_pkg(name = name, beast2_folder = beast2_folder)
 
-  expect_true(is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder))
+  expect_true(
+    is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder)
+  )
 
   uninstall_beast2_pkg(name = name, beast2_folder = beast2_folder)
 
-  expect_false(is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder))
+  expect_false(
+    is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder)
+  )
 })

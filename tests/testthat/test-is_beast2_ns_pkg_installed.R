@@ -10,6 +10,8 @@ test_that("install NS package at non-standard location", {
   beast2_folder <- tempfile()
   beastier::install_beast2(folder_name = beast2_folder)
   mauricer::install_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
-  expect_true(is_beast2_pkg_installed(name = "NS", beast2_folder = beast2_folder))
+  expect_true(
+    is_beast2_pkg_installed(name = "NS", beast2_folder = beast2_folder)
+  )
   expect_true(is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
 })
