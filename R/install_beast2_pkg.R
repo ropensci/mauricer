@@ -29,7 +29,10 @@ install_beast2_pkg <- function(
     name = name,
     beast2_folder = beast2_folder)
   ) {
-    stop("Cannot install installed package")
+    stop(
+      "Cannot install installed package '", name, "'at '", beast2_folder, "'.",
+      "Tip: this means the package is already installed :-)"
+    )
   }
   # java -cp beast.jar beast.util.PackageManager -add bacter
   system2(
