@@ -29,7 +29,11 @@ is_beast2_ns_pkg_installed <- function(
         beast2_folder = beast2_folder
       )
     )
-  }, error = function(e) {} # nolint do nothing
+  }, error = function(e) {
+      if (isTRUE(verbose)) {
+        message(e$msg)
+      }
+    }
   )
   result
 }

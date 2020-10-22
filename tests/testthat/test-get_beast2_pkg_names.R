@@ -40,3 +40,13 @@ test_that("use", {
   testit::assert(beastier::is_beast2_installed())
 
 })
+
+
+test_that("show command in verbose mode", {
+  if (!beastier::is_beast2_installed()) return()
+
+  expect_message(
+    get_beast2_pkg_names(verbose = TRUE),
+    "Running command: '"
+  )
+})

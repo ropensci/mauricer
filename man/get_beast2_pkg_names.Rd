@@ -6,7 +6,8 @@
 \usage{
 get_beast2_pkg_names(
   beast2_folder = beastier::get_default_beast2_folder(),
-  has_internet = curl::has_internet()
+  has_internet = curl::has_internet(),
+  verbose = FALSE
 )
 }
 \arguments{
@@ -23,6 +24,8 @@ Use \link[beastier]{get_default_beast2_jar_path}
 \item{has_internet}{boolean to indicate if the user has access to the
 internet. By default, this value equals the result
 of \code{curl::has_internet}}
+
+\item{verbose}{set to TRUE for extra output, as can be used in debugging}
 }
 \value{
 a data frame with columns\cr
