@@ -15,18 +15,19 @@ test_that("install NS package at non-standard location", {
   # Install BEAST2
   beastier::install_beast2(folder_name = beast2_folder)
 
-  # Hmmm, NS is installed by default
-  pkgs <- mauricer::get_beast2_pkg_names(beast2_folder = beast2_folder, verbose = TRUE)
-  expect_true("NA" != pkgs$installed_version[pkgs$name == "NS"])
-  expect_true(
+  # NS is installed by default, uninstall it if so
+  if (mauricer::is_beast2_ns_pkg_installed()) {
+    mauricer::uninstall_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
+  }
+  pkgs <- mauricer::get_beast2_pkg_names(beast2_folder = beast2_folder)
+  expect_equal("NA", pkgs$installed_version[pkgs$name == "NS"])
+  expect_false(
     is_beast2_pkg_installed(name = "NS", beast2_folder = beast2_folder)
   )
-  expect_true(is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+  expect_false(is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
 
-  # No need to install NS package
-  if (1 == 2) {
-    mauricer::install_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
-  }
+  # Install (or re-install) the NS package
+  mauricer::install_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
   expect_true(
     is_beast2_pkg_installed(name = "NS", beast2_folder = beast2_folder)
   )
