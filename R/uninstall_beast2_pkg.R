@@ -10,6 +10,7 @@
 uninstall_beast2_pkg <- function(
   name,
   beast2_folder = beastier::get_default_beast2_folder(),
+  verbose = FALSE,
   has_internet = curl::has_internet()
 ) {
   if (!has_internet) {
@@ -20,18 +21,30 @@ uninstall_beast2_pkg <- function(
   ) {
     stop("Cannot uninstall absent package")
   }
+  if (isTRUE(verbose)) {
+    print(
+      paste0(
+        "Uninstalling BEAST2 package '", name, "' from '", beast2_folder, "'"
+      )
+    )
+  }
   # java -cp beast.jar beast.util.PackageManager -add bacter
-  system2(
-    command = beastier::get_default_java_path(),
-    args = c(
-      "-cp",
-      shQuote(
-        beastier::get_default_beast2_jar_path(beast2_folder = beast2_folder)
-      ),
-      "beast.util.PackageManager",
-      "-del",
-      name
+  cmds <- c(
+    beastier::get_default_java_path(),
+    "-cp",
+    shQuote(
+      beastier::get_default_beast2_jar_path(beast2_folder = beast2_folder)
     ),
+    "beast.util.PackageManager",
+    "-del",
+    name
+  )
+  if (isTRUE(verbose)) {
+    print(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
+  }
+  system2(
+    command = cmds[1],
+    args = cmds[-1],
     stdout = FALSE
   )
 }

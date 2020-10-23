@@ -65,3 +65,32 @@ test_that("install and uninstall at non-standard location", {
     is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder)
   )
 })
+
+test_that("install must be silent", {
+
+  if (!beastier::is_beast2_installed()) return()
+  if (!curl::has_internet()) return()
+
+  beast2_folder <- tempfile()
+  beastier::install_beast2(folder_name = beast2_folder)
+  df <- get_beast2_pkg_names(beast2_folder = beast2_folder)
+  name <- df[df$installed_version == "NA", ]$name[1]
+  expect_silent(install_beast2_pkg(name = name, beast2_folder = beast2_folder))
+})
+
+test_that("install can be verbose", {
+
+  if (!beastier::is_beast2_installed()) return()
+  if (!curl::has_internet()) return()
+
+  beast2_folder <- tempfile()
+  beastier::install_beast2(folder_name = beast2_folder)
+  df <- get_beast2_pkg_names(beast2_folder = beast2_folder)
+  name <- df[df$installed_version == "NA", ]$name[1]
+  expect_output(
+    install_beast2_pkg(
+      name = name, beast2_folder = beast2_folder, verbose = TRUE
+    ),
+    "Install BEAST2 package"
+  )
+})

@@ -7,6 +7,7 @@
 install_beast2_pkg(
   name,
   beast2_folder = beastier::get_default_beast2_folder(),
+  verbose = FALSE,
   has_internet = curl::has_internet()
 )
 }
@@ -22,6 +23,8 @@ Use \link[beastier]{get_default_beast2_bin_path}
   to get the full path to the default BEAST2 executable.
 Use \link[beastier]{get_default_beast2_jar_path}
   to get the full path to the default BEAST2 jar file.}
+
+\item{verbose}{set to TRUE for extra output, as can be used in debugging}
 
 \item{has_internet}{boolean to indicate if the user has access to the
 internet. By default, this value equals the result

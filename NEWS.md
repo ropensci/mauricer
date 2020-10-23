@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.3 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * `install_beast2_pkg` and `uninstall_beast2_pkg` can be verbose
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.2 (2020-10-21)
 
 ### NEW FEATURES
