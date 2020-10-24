@@ -87,10 +87,13 @@ test_that("install can be verbose", {
   beastier::install_beast2(folder_name = beast2_folder)
   df <- get_beast2_pkg_names(beast2_folder = beast2_folder)
   name <- df[df$installed_version == "NA", ]$name[1]
+
   expect_output(
     install_beast2_pkg(
-      name = name, beast2_folder = beast2_folder, verbose = TRUE
+      name = name,
+      beast2_folder = beast2_folder,
+      verbose = TRUE
     ),
-    "Install BEAST2 package"
+    "Installing BEAST2 package"
   )
 })
