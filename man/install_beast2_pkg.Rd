@@ -37,6 +37,11 @@ nothing. It does install the BEAST2 package
 Install a BEAST2 package. If the package is already installed,
 (see \link{is_beast2_pkg_installed}), this function \link{stop}s.
 }
+\note{
+Installing or uninstalling a BEAST2 package for a
+(singular) BEAST2 installation, does so for all BEAST2
+installations
+}
 \examples{
 \dontrun{
   install_beast2_pkg("NS")

@@ -97,3 +97,37 @@ test_that("install can be verbose", {
     "Installing BEAST2 package"
   )
 })
+
+test_that("install and uninstall happen globally", {
+
+  if (!beastier::is_beast2_installed()) return()
+  if (!mauricer::is_beast2_ns_pkg_installed()) return()
+  if (!curl::has_internet()) return()
+
+
+  beast2_folder <- tempfile()
+  beastier::install_beast2(folder_name = beast2_folder)
+
+  expect_true(mauricer::is_beast2_ns_pkg_installed())
+  expect_true(mauricer::is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+
+  mauricer::uninstall_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
+
+  expect_false(mauricer::is_beast2_ns_pkg_installed())
+  expect_false(mauricer::is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+
+  mauricer::install_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
+
+  expect_true(mauricer::is_beast2_ns_pkg_installed())
+  expect_true(mauricer::is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+
+  mauricer::uninstall_beast2_pkg(name = "NS")
+
+  expect_false(mauricer::is_beast2_ns_pkg_installed())
+  expect_false(mauricer::is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+
+  mauricer::install_beast2_pkg(name = "NS")
+
+  expect_true(mauricer::is_beast2_ns_pkg_installed())
+  expect_true(mauricer::is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
+})

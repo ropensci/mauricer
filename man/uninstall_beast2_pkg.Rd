@@ -36,6 +36,11 @@ nothing. It does install the BEAST2 package
 \description{
 Uninstall a BEAST2 package
 }
+\note{
+Installing or uninstalling a BEAST2 package for a
+(singular) BEAST2 installation, does so for all BEAST2
+installations
+}
 \examples{
 \dontrun{
   uninstall_beast2_pkg("Beasy")
