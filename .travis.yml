@@ -10,11 +10,7 @@ matrix:
     os: linux
     env: INSTALL_BEAST2=false
 
-r_packages:
-  - tracerer
-
 r_github_packages:
-  - richelbilderbeek/beastier
   - jimhester/covr
   - jimhester/lintr
   - ropensci/spelling
