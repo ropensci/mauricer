@@ -13,6 +13,7 @@ matrix:
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
+  - MangoTheCat/goodpractice
   - ropensci/spelling
 
 before_install:
@@ -48,8 +49,6 @@ after_success:
   - if [[ "$INSTALL_BEAST2" == false ]]; then proselint *.md | egrep -v "typography\.symbols\.curly_quotes"; fi
   # No local files created
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
-  - # Do a CRAN build
-  - cd scripts; sh -x build_cran
   # Download thesis
   - wget https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf
 
