@@ -27,6 +27,7 @@ Suggests:
     testit,
     testthat (>= 2.1.0)
 VignetteBuilder: knitr
-URL: https://docs.ropensci.org/mauricer/, https://github.com/ropensci/mauricer/
+URL: https://docs.ropensci.org/mauricer/ (website)
+    https://github.com/ropensci/mauricer/
 BugReports: https://github.com/ropensci/mauricer/issues
 SystemRequirements: BEAST2 (https://www.beast2.org/)
