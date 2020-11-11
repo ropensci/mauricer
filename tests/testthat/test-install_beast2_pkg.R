@@ -88,7 +88,7 @@ test_that("install can be verbose", {
   df <- get_beast2_pkg_names(beast2_folder = beast2_folder)
   name <- df[df$installed_version == "NA", ]$name[1]
 
-  expect_output(
+  expect_message(
     install_beast2_pkg(
       name = name,
       beast2_folder = beast2_folder,

@@ -47,7 +47,7 @@ test_that("uninstall can be verbose", {
   df <- get_beast2_pkg_names(beast2_folder = beast2_folder)
   name <- df[df$installed_version == "NA", ]$name[1]
   expect_silent(install_beast2_pkg(name = name, beast2_folder = beast2_folder))
-  expect_output(
+  expect_message(
     uninstall_beast2_pkg(
       name = name,
       beast2_folder = beast2_folder,
