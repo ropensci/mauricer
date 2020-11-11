@@ -40,7 +40,7 @@ install_beast2_pkg <- function(
     )
   }
   if (isTRUE(verbose)) {
-    print(
+    message(
       paste0(
         "Installing BEAST2 package '", name, "' from '", beast2_folder, "'"
       )
@@ -58,7 +58,7 @@ install_beast2_pkg <- function(
     name
   )
   if (isTRUE(verbose)) {
-    print(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
+    message(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
   }
   system2(
     command = cmds[1],

@@ -25,7 +25,7 @@ uninstall_beast2_pkg <- function(
     stop("Cannot uninstall absent package")
   }
   if (isTRUE(verbose)) {
-    print(
+    message(
       paste0(
         "Uninstalling BEAST2 package '", name, "' from '", beast2_folder, "'"
       )
@@ -43,7 +43,7 @@ uninstall_beast2_pkg <- function(
     name
   )
   if (isTRUE(verbose)) {
-    print(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
+    message(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
   }
   system2(
     command = cmds[1],
