@@ -33,3 +33,12 @@ test_that("install NS package at non-standard location", {
   )
   expect_true(is_beast2_ns_pkg_installed(beast2_folder = beast2_folder))
 })
+
+test_that("use", {
+  expect_message(
+    is_beast2_ns_pkg_installed(
+      beast2_folder = "nonsense",
+      verbose = TRUE
+    )
+  )
+})
