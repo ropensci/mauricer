@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.4 (unreleased)
+
+### NEW FEATURES
+
+  * Use the GitHub Actions continuous integration service
+
+### MINOR IMPROVEMENTS
+
+  * None
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.3 (2020-10-31)
 
 ### NEW FEATURES
