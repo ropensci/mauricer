@@ -20,7 +20,12 @@ uninstall_beast2_pkg <- function(
     stop("No internet connection")
   }
   if (
-    isFALSE(is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder))
+    isFALSE(
+      mauricer::is_beast2_pkg_installed(
+        name = name,
+        beast2_folder = beast2_folder
+      )
+    )
   ) {
     stop("Cannot uninstall absent package")
   }
