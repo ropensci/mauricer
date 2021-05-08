@@ -23,6 +23,7 @@ Imports:
 Suggests:
     beautier,
     knitr,
+    markdown,
     rmarkdown,
     testit,
     testthat (>= 2.1.0)
