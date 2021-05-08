@@ -48,7 +48,7 @@ get_beast2_pkg_names <- function(
     message(paste0("Running command: '", paste(cmds, collapse = " "), "'"))
   }
   raw <- system2(
-    command = cmds[1],
+    command = normalizePath(cmds[1]),
     args = cmds[-1],
     stdout = TRUE
   )

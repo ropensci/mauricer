@@ -51,7 +51,7 @@ uninstall_beast2_pkg <- function(
     message(paste0("Running commmand '", paste0(cmds, collapse = " "), "'"))
   }
   system2(
-    command = cmds[1],
+    command = normalizePath(cmds[1]),
     args = cmds[-1],
     stdout = FALSE
   )
