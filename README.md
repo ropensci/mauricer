@@ -44,3 +44,4 @@ Package                                                                        |
 [mauricer_on_windows](https://github.com/richelbilderbeek/mauricer_on_windows) |[![Build status](https://ci.appveyor.com/api/projects/status/bc43iwp68xo2dduh/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/mauricer-on-windows/branch/master)
 
 [![ropensci_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)
+
