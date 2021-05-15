@@ -16,7 +16,7 @@ jobs:
           - install_beast2: "true" 
           - install_beast2: "false"
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -42,24 +42,6 @@ jobs:
           remotes::install_github("ropensci/tracerer")
           remotes::install_github("ropensci/beastier")
         shell: Rscript {0}
-
-      - name: Show BEAST2
-        env:
-          INSTALL_BEAST2: ${{ matrix.install_beast2 }}
-        run: echo "$INSTALL_BEAST2"
-
-      - name: If statement on BEAST2 is true
-        env:
-          INSTALL_BEAST2: ${{ matrix.install_beast2 }}
-        run: if [[ "$INSTALL_BEAST2" == true ]]; then echo "Yay!"; fi
-
-      - name: Show location
-        run: pwd
-
-      - name: If statement on BEAST2 is false
-        env:
-          INSTALL_BEAST2: ${{ matrix.install_beast2 }}
-        run: if [[ "$INSTALL_BEAST2" == false ]]; then echo "Nay!"; fi
 
       - name: Install BEAST2
         env:
