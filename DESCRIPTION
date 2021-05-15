@@ -21,7 +21,7 @@ Imports:
     curl,
     stringr
 Suggests:
-    beautier,
+    beautier (>= 2.5),
     knitr,
     markdown,
     rmarkdown,
