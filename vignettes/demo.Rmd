@@ -82,28 +82,26 @@ if (curl::has_internet() && beastier::is_beast2_installed()) {
 
 Install that package:
 
-```{r}
+```
 if (curl::has_internet() && beastier::is_beast2_installed()) {
-  install_beast2_pkg(package_name)
+  mauricerinstall::install_beast2_pkg(package_name)
 }
 ```
 
-## Verify the BEAST2 package is indeed installed
-
-Use `is_beast2_pkg_installed`:
-
-```{r}
-if (curl::has_internet() && beastier::is_beast2_installed()) {
-  expect_true(is_beast2_pkg_installed(package_name))
-}
-```
+Note that this installation uses a non-CRAN package,
+called `mauricerinstall`, as installing software
+is against CRAN policy.
 
 ## Uninstall the BEAST2 package
 
 Use `uninstall_beast2_pkg`:
 
-```{r}
+```
 if (curl::has_internet() && beastier::is_beast2_installed()) {
-  uninstall_beast2_pkg(package_name)
+  mauricerinstall::uninstall_beast2_pkg(package_name)
 }
 ```
+
+Also this code uses a non-CRAN package,
+called `mauricerinstall`, as installing software
+is against CRAN policy.

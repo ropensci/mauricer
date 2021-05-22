@@ -2,6 +2,28 @@
 
 Newest versions at top.
 
+## `mauricer` 2.5 (2021-05-22)
+
+### NEW FEATURES
+
+  * Use the GitHub Actions continuous integration service
+
+### MINOR IMPROVEMENTS
+
+  * None
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * `install_beast2_pkg` and  `uninstall_beast2_pkg` are deprecated,
+    as these violated CRAN policy.
+    The deprecation message will point users to the non-official
+    `mauricerinstall` package at 
+    `https://github.com/richelbilderbeek/mauricerinstall`
+
 ## `mauricer` 2.4 (2021-05-14)
 
 ### NEW FEATURES
