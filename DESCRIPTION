@@ -13,7 +13,6 @@ Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
     This package allows to install 'BEAST2' packages from 'R'.
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
 RoxygenNote: 7.1.1
 Depends: 
     beastier (>= 2.3.1)
