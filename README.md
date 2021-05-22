@@ -10,7 +10,7 @@ Branch   |[![GitHub Actions logo](man/figures/GitHubActions.png)](https://github
 `master` |![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=master)   |[![Build Status](https://travis-ci.org/ropensci/mauricer.svg?branch=master)](https://travis-ci.org/ropensci/mauricer) |[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/mauricer/branch/master)
 `develop`|![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=develop)  |[![Build Status](https://travis-ci.org/ropensci/mauricer.svg?branch=develop)](https://travis-ci.org/ropensci/mauricer)|[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=develop)](https://codecov.io/github/ropensci/mauricer/branch/develop)
 
-Install BEAST2 packages from R.
+Work with BEAST2 packages from R.
 
 Related packages:
 
@@ -20,9 +20,13 @@ Related packages:
  * [lumier](https://github.com/ropensci/lumier) helps to create the `babette` function call needed
  * [tracerer](https://github.com/ropensci/tracerer) parses BEAST2 output (`.log`, `.trees`, etc) files.
 
+Non-CRAN extensions:
+
+ * [mauricerinstall](https://github.com/richelbilderbeek/mauricerinstall) Install and uninstall BEAST2 packages
+
 ## Examples
 
- * [YouTube video about maurices](https://youtu.be/Yk737gorcrw)
+ * [YouTube video about mauricer](https://youtu.be/Yk737gorcrw)
 
 ## Package dependencies
 
