@@ -26,7 +26,17 @@ Non-CRAN extensions:
 
 ## Examples
 
+To install the BEAST2 NS package:
+
+```
+remotes::install_github("richelbilderbeek/mauricerinstall")
+mauricerinstall::install_beast2_pkg("NS")
+```
+
+An intoduction video:
+
  * [YouTube video about mauricer](https://youtu.be/Yk737gorcrw)
+
 
 ## Package dependencies
 
