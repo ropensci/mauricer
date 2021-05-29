@@ -6,7 +6,7 @@ test_that("NS, deep", {
   if (!is_beast2_ns_pkg_installed()) return()
 
   # We cannot test
-  output_filename <- tempfile(pattern = "beast2_input_file_", fileext = ".xml")
+  output_filename <- get_beastier_tempfilename()
 
   beautier::create_beast2_input_file_from_model(
     input_filename = beautier::get_beautier_path("anthus_aco_sub.fas"),
@@ -31,4 +31,5 @@ test_that("NS, deep", {
       output_filename
     )
   )
+  file.remove(output_filename)
 })

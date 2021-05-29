@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` 2.5.1 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * Creates no temporary files
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` 2.5 (2021-05-22)
 
 ### NEW FEATURES
