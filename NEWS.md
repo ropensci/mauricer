@@ -2,7 +2,7 @@
 
 Newest versions at top.
 
-## `mauricer` 2.5.1 (unreleased)
+## `mauricer` 2.5.1 (2021-05-29)
 
 ### NEW FEATURES
 
