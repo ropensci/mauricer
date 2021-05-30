@@ -31,10 +31,12 @@ before_script:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo tlmgr install inconsolata; fi
   # Lapack
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install liblapack-dev; fi
-  # Install BEAST2. Note: beastier must work without BEAST2 installed as well
-  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e "beastier::install_beast2()"; fi
-  # Do not install BEAST2 NS package, won't work anyways
-  # - Rscript -e "source(\"R/install_beast2_pkg.R\"); source(\"R/is_beast2_pkg_installed.R\"); source(\"R/get_beast2_pkg_names.R\"); install_beast2_pkg(\"NS\")"
+  # Install BEAST2
+  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'remotes::install_github("richelbilderbeek/beastierinstall")'; fi
+  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'beastierinstall::install_beast2()'; fi
+  # Install BEAST2 NS package
+  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'remotes::install_github("richelbilderbeek/mauricerinstall")'; fi
+  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'mauricerinstall::install_beast2_package("ns")'; fi
   # lintr
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
   # proselint
@@ -51,10 +53,4 @@ after_success:
   - if [[ "$INSTALL_BEAST2" == false ]]; then proselint *.md | egrep -v "typography\.symbols\.curly_quotes"; fi
   # No local files created
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then if [[ $(egrep -R "\"~" --include={*.R,*.Rmd}) ]]; then echo "Local file created"; exit 1; fi; fi
-  # Download thesis
-  - wget https://pure.rug.nl/ws/files/132028374/Complete_thesis.pdf
-
-after_failure:
-  # Download thesis
-  - wget https://pure.rug.nl/ws/files/132028374/Complete_thesis.pdf
 
