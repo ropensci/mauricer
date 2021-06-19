@@ -14,6 +14,16 @@ test_that("no packages without internet", {
 
   expect_error(
     get_beast2_pkg_names(
+      beast2_folder = "absent"
+    ),
+    "BEAST2 not installed"
+  )
+})
+
+test_that("no packages without internet", {
+
+  expect_error(
+    get_beast2_pkg_names(
       has_internet = FALSE
     ),
     "No internet connection"
