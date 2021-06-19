@@ -22,6 +22,7 @@ Related packages:
 
 Non-CRAN extensions:
 
+ * [beastierinstall](https://github.com/richelbilderbeek/beastierinstall) Install and uninstall BEAST2
  * [mauricerinstall](https://github.com/richelbilderbeek/mauricerinstall) Install and uninstall BEAST2 packages
 
 ## Examples
