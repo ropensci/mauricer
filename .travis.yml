@@ -36,7 +36,7 @@ before_script:
   - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'beastierinstall::install_beast2()'; fi
   # Install BEAST2 NS package
   - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'remotes::install_github("richelbilderbeek/mauricerinstall")'; fi
-  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'mauricerinstall::install_beast2_pkg("ns")'; fi
+  - if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'mauricerinstall::install_beast2_pkg("NS")'; fi
   # lintr
   - if [ -f ".lintr" ]; then echo "Do use Hadley Wickham's style guide"; exit 1; fi
   # proselint
