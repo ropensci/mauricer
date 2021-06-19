@@ -19,21 +19,12 @@ is_beast2_ns_pkg_installed <- function(
   verbose = FALSE,
   beast2_folder = beastier::get_default_beast2_folder()
 ) {
-  result <- FALSE
-  tryCatch({
-    result <- beastier::is_beast2_input_file(
-      mauricer::get_mrc_path("nested_sampling.xml"),
-      show_warnings = show_warnings,
-      verbose = verbose,
-      beast2_path = beastier::get_default_beast2_bin_path(
-        beast2_folder = beast2_folder
-      )
+  beastier::is_beast2_input_file(
+    mauricer::get_mrc_path("nested_sampling.xml"),
+    show_warnings = show_warnings,
+    verbose = verbose,
+    beast2_path = beastier::get_default_beast2_bin_path(
+      beast2_folder = beast2_folder
     )
-  }, error = function(e) {
-      if (isTRUE(verbose)) {
-        message(e$msg)
-      }
-    }
   )
-  result
 }

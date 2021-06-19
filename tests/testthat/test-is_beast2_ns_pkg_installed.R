@@ -27,7 +27,10 @@ test_that("install NS package at non-standard location", {
   )
 
   # Install (or re-install) the NS package
-  mauricerinstall::install_beast2_pkg(name = "NS", beast2_folder = beast2_folder)
+  mauricerinstall::install_beast2_pkg(
+    name = "NS",
+    beast2_folder = beast2_folder
+  )
   expect_true(
     mauricer::is_beast2_pkg_installed(
       name = "NS", beast2_folder = beast2_folder
