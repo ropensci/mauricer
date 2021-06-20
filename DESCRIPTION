@@ -17,10 +17,10 @@ RoxygenNote: 7.1.1
 Depends: 
     beastier (>= 2.4)
 Imports:
-    curl,
     stringr
 Suggests:
     beautier (>= 2.5.2),
+    curl,
     knitr,
     markdown,
     rmarkdown,
