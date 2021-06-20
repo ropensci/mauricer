@@ -5,7 +5,6 @@ test_that("NS, deep", {
   if (!curl::has_internet()) return()
   if (!is_beast2_ns_pkg_installed()) return()
 
-  # We cannot test
   output_filename <- get_beastier_tempfilename()
 
   beautier::create_beast2_input_file_from_model(
