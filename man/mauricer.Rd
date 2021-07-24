@@ -14,6 +14,11 @@ phylogenies and parameters.
 'BEAST2' is commonly accompanied by 'BEAUti 2' (<http://www.beast2.org>),
 which, among others, allows one to install 'BEAST2' package.
 This package allows to install 'BEAST2' packages from 'R'.
+
+* \link{get_beast2_pkg_names}: get the names of all BEAST2 packages
+* \link{install_beast2_pkg}: install a BEAST2 package
+* \link{is_beast2_pkg_installed}: determine if a BEAST2 package is installed
+* \link{uninstall_beast2_pkg}: uninstall a BEAST2 package
 }
 \seealso{
 \link{mauricer} is part of the \code{babette} package suite:

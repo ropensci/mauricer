@@ -85,3 +85,9 @@ jobs:
         run: beastier::beastier_report()
         shell: Rscript {0}
 
+      - name: BEAST2 packages
+        run: remotes::install_github("ropensci/mauricer"); mauricer::get_beast2_pkg_names()
+        shell: Rscript {0}
+
+
+
