@@ -53,7 +53,7 @@ jobs:
       - name: Install BEAST2 NS package
         env:
           INSTALL_BEAST2: ${{ matrix.install_beast2 }}
-        run: if [[ "$INSTALL_BEAST2" == true ]]; then Rscript -e 'mauricerinstall::install_beast2_pkg("NS")'; fi
+        run: if [[ "$INSTALL_BEAST2" == true ]]; then ./scripts/install_beast2_ns_pkg.sh ; fi
 
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
