@@ -15,7 +15,7 @@ License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 Depends: 
-    beastier (>= 2.4.6)
+    beastier (>= 2.4.7)
 Imports:
     stringr
 Suggests:
