@@ -2,6 +2,24 @@
 
 Newest versions at top.
 
+## `mauricer` v2.5.3 (unreleased)
+
+### NEW FEATURES
+
+  * None
+
+### MINOR IMPROVEMENTS
+
+  * None
+
+### BUG FIXES
+
+  * None
+
+### DEPRECATED AND DEFUNCT
+
+  * None
+
 ## `mauricer` v2.5.2 (2022-08-11)
 
 ### NEW FEATURES
