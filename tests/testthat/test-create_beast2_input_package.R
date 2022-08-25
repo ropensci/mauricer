@@ -1,4 +1,3 @@
-
 test_that("NS, deep", {
 
   if (!beastier::is_beast2_installed()) return()
