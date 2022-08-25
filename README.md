@@ -60,4 +60,6 @@ Package                                                                        |
 
 [![ropensci_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)
 
+## Links
 
+ * ['mauricer' CRAN page](https://CRAN.R-project.org/package=mauricer)
