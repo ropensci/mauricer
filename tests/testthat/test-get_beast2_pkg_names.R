@@ -9,6 +9,7 @@ test_that("use", {
   expect_true("dependencies" %in% names(df))
   expect_true("description" %in% names(df))
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -21,6 +22,7 @@ test_that("no packages without internet", {
     "BEAST2 not installed"
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -33,6 +35,7 @@ test_that("no packages without internet", {
     "No internet connection"
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -44,5 +47,6 @@ test_that("show command in verbose mode", {
     "Running command: '"
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })

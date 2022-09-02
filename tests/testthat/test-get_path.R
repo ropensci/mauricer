@@ -10,6 +10,7 @@ test_that("use", {
     get_mrc_path("anthus_aco_sub.fas")
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -20,5 +21,6 @@ test_that("abuse", {
     "'filename' must be the name of a file in 'inst/extdata'"
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })

@@ -7,6 +7,7 @@ test_that("use", {
   name <- df[df$installed_version == "NA", ]$name[1]
   expect_false(is_beast2_pkg_installed(name))
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -20,6 +21,7 @@ test_that("can install NS in two equivalent ways", {
     is_beast2_ns_pkg_installed()
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
 
@@ -33,5 +35,6 @@ test_that("return NULL without internet", {
     )
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })

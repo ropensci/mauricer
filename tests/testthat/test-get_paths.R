@@ -8,5 +8,6 @@ test_that("use", {
     get_mrc_paths(c("anthus_aco_sub.fas", "anthus_nd2_sub.fas"))
   )
 
+  beastier::remove_beaustier_folders()
   expect_silent(beastier::check_empty_beaustier_folders())
 })
