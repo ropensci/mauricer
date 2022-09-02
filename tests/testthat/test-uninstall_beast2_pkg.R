@@ -3,4 +3,6 @@ test_that("deprecated", {
     uninstall_beast2_pkg(),
     "deprecated"
   )
+
+  expect_silent(beastier::check_empty_beaustier_folders())
 })

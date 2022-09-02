@@ -1,5 +1,3 @@
-context("get_mrc_paths")
-
 test_that("use", {
 
   testthat::expect_equal(
@@ -10,4 +8,5 @@ test_that("use", {
     get_mrc_paths(c("anthus_aco_sub.fas", "anthus_nd2_sub.fas"))
   )
 
+  expect_silent(beastier::check_empty_beaustier_folders())
 })
