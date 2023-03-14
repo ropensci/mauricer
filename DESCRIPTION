@@ -19,7 +19,7 @@ Depends:
 Imports:
     stringr
 Suggests:
-    beautier (>= 2.6.2),
+    beautier (>= 2.6.6),
     curl,
     knitr,
     markdown,
