@@ -33,7 +33,10 @@
 #'     \link[tracerer]{tracerer}: parse and analyse BEAST2 output
 #'   }
 #' }
-#' @docType package
-#' @name mauricer
-#' @import beastier
+#' @author Richèl J.C. Bilderbeek
+#' @keywords internal
+"_PACKAGE"
+
+## usethis namespace: start
+## usethis namespace: end
 NULL
