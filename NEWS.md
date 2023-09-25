@@ -2,7 +2,7 @@
 
 Newest versions at top.
 
-## `mauricer` v2.5.3 (unreleased)
+## `mauricer` v2.5.3 (2023-09-25)
 
 ### NEW FEATURES
 
@@ -10,6 +10,7 @@ Newest versions at top.
 
 ### MINOR IMPROVEMENTS
 
+ * Use new CITATION style
  * Did `usethis::use_package_doc()`
 
 ### BUG FIXES
