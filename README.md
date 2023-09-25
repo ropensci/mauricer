@@ -41,18 +41,18 @@ An introduction video:
 
 ## Package dependencies
 
-Package                                                                     |[![Travis CI logo](man/figures/TravisCI.png)](https://travis-ci.com)                                                 |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
-[beastier](https://github.com/ropensci/beastier)                            |[![Build Status](https://travis-ci.com/ropensci/beastier.svg?branch=master)](https://travis-ci.com/ropensci/beastier)|[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beastier/branch/master)
+Package                                                                     |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
+[beastier](https://github.com/ropensci/beastier)                            |[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beastier/branch/master)
 
 ## Related packages
 
-Package                                         |[![Travis CI logo](man/figures/TravisCI.png)](https://travis-ci.com)                                                 |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
-[babette](https://github.com/ropensci/babette)  |[![Build Status](https://travis-ci.com/ropensci/babette.svg?branch=master)](https://travis-ci.com/ropensci/babette)  |[![codecov.io](https://codecov.io/github/ropensci/babette/coverage.svg?branch=master)](https://codecov.io/github/ropensci/babette/branch/master)
-[beautier](https://github.com/ropensci/beautier)|[![Build Status](https://travis-ci.com/ropensci/beautier.svg?branch=master)](https://travis-ci.com/ropensci/beautier)|[![codecov.io](https://codecov.io/github/ropensci/beautier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beautier/branch/master)
-[lumier](https://github.com/ropensci/lumier)    |[![Build Status](https://travis-ci.com/ropensci/lumier.svg?branch=master)](https://travis-ci.com/ropensci/lumier)    |[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/lumier/branch/master)
-[tracerer](https://github.com/ropensci/tracerer)|[![Build Status](https://travis-ci.com/ropensci/tracerer.svg?branch=master)](https://travis-ci.com/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/tracerer/branch/master)
+Package                                         |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
+[babette](https://github.com/ropensci/babette)  |[![codecov.io](https://codecov.io/github/ropensci/babette/coverage.svg?branch=master)](https://codecov.io/github/ropensci/babette/branch/master)
+[beautier](https://github.com/ropensci/beautier)|[![codecov.io](https://codecov.io/github/ropensci/beautier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beautier/branch/master)
+[lumier](https://github.com/ropensci/lumier)    |[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/lumier/branch/master)
+[tracerer](https://github.com/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/tracerer/branch/master)
 
 Package                                                                        | Status
 -------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
