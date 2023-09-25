@@ -14,10 +14,9 @@ Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.3
-Depends: 
-    beastier (>= 2.4.12)
 Imports:
-    stringr
+    stringr,
+    beastier (>= 2.4.12)
 Suggests:
     beautier (>= 2.6.9),
     curl,
