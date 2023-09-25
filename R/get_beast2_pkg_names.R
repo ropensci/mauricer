@@ -18,7 +18,7 @@
 #' }
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#' if (is_beast2_installed() && curl::has_internet()) {
+#' if (beastier::is_beast2_installed() && curl::has_internet()) {
 #'   get_beast2_pkg_names()
 #' }
 #' @export

@@ -47,7 +47,7 @@ List all BEAST2 packages that are available and installed.
 Will \link{stop} if there is no internet connection
 }
 \examples{
-if (is_beast2_installed() && curl::has_internet()) {
+if (beastier::is_beast2_installed() && curl::has_internet()) {
   get_beast2_pkg_names()
 }
 }
