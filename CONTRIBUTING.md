@@ -2,7 +2,7 @@
 
 Awesome that you are reading this.
 
-This GitHub follows the [Contributor Covenant Code of Conduct](code_of_conduct.md).
+This GitHub follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
 
  * For questions, you can create an Issue
  * Code changes go via Pull Requests
