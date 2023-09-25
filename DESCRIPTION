@@ -13,7 +13,7 @@ Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
     This package allows to work with 'BEAST2' packages from 'R'.
 License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Depends: 
     beastier (>= 2.4.12)
 Imports:
