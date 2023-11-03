@@ -18,7 +18,7 @@ Imports:
     stringr,
     beastier (>= 2.4.11)
 Suggests:
-    beautier (>= 2.6.9),
+    beautier (>= 2.6.11),
     curl,
     knitr,
     markdown,
