@@ -16,7 +16,7 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 Imports:
     stringr,
-    beastier (>= 2.4.11)
+    beastier (>= 2.5)
 Suggests:
     beautier (>= 2.6.11),
     curl,
