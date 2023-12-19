@@ -21,12 +21,11 @@ Suggests:
     beautier (>= 2.6.11),
     curl,
     knitr,
-    markdown,
     rmarkdown,
-    testit,
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    tracerer
 VignetteBuilder: knitr
 URL: https://docs.ropensci.org/mauricer/ (website)
-    https://github.com/ropensci/mauricer/
+    https://github.com/ropensci/mauricer
 BugReports: https://github.com/ropensci/mauricer/issues
 SystemRequirements: BEAST2 (https://www.beast2.org/)
