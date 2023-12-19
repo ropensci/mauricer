@@ -1,14 +1,14 @@
 # mauricer
 
-[![Peer Review Status](https://badges.ropensci.org/209_status.svg)](https://github.com/ropensci/onboarding/issues/209)
+[![Peer Review Status](https://badges.ropensci.org/209_status.svg)](https://github.com/ropensci/software-review/issues/209)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mauricer)](https://cran.r-project.org/package=mauricer)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/mauricer)]( https://CRAN.R-project.org/package=mauricer)
 [![](http://cranlogs.r-pkg.org/badges/mauricer)](https://CRAN.R-project.org/package=mauricer)
 
-Branch   |[![GitHub Actions logo](man/figures/GitHubActions.png)](https://github.com/ropensci/mauricer/actions)|[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+Branch   |[![GitHub Actions logo](man/figures/GitHubActions.png)](https://github.com/ropensci/mauricer/actions)|[![Codecov logo](man/figures/Codecov.png)](https://about.codecov.io/)
 ---------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------
-`master` |![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=master)   |[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/mauricer/branch/master)
-`develop`|![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=develop)  |[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=develop)](https://codecov.io/github/ropensci/mauricer/branch/develop)
+`master` |![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=master)   |[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/mauricer/branch/master)
+`develop`|![R-CMD-check](https://github.com/ropensci/mauricer/workflows/R-CMD-check/badge.svg?branch=develop)  |[![codecov.io](https://codecov.io/github/ropensci/mauricer/coverage.svg?branch=develop)](https://app.codecov.io/github/ropensci/mauricer/branch/develop)
 
 Work with BEAST2 packages from R.
 
@@ -41,18 +41,18 @@ An introduction video:
 
 ## Package dependencies
 
-Package                                                                     |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+Package                                                                     |[![Codecov logo](man/figures/Codecov.png)](https://about.codecov.io/)
 ----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
-[beastier](https://github.com/ropensci/beastier)                            |[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beastier/branch/master)
+[beastier](https://github.com/ropensci/beastier)                            |[![codecov.io](https://codecov.io/github/ropensci/beastier/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/beastier/branch/master)
 
 ## Related packages
 
-Package                                         |[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+Package                                         |[![Codecov logo](man/figures/Codecov.png)](https://about.codecov.io/)
 ------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------
-[babette](https://github.com/ropensci/babette)  |[![codecov.io](https://codecov.io/github/ropensci/babette/coverage.svg?branch=master)](https://codecov.io/github/ropensci/babette/branch/master)
-[beautier](https://github.com/ropensci/beautier)|[![codecov.io](https://codecov.io/github/ropensci/beautier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/beautier/branch/master)
-[lumier](https://github.com/ropensci/lumier)    |[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://codecov.io/github/ropensci/lumier/branch/master)
-[tracerer](https://github.com/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/tracerer/branch/master)
+[babette](https://github.com/ropensci/babette)  |[![codecov.io](https://codecov.io/github/ropensci/babette/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/babette/branch/master)
+[beautier](https://github.com/ropensci/beautier)|[![codecov.io](https://codecov.io/github/ropensci/beautier/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/beautier/branch/master)
+[lumier](https://github.com/ropensci/lumier)    |[![codecov.io](https://codecov.io/github/ropensci/lumier/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/lumier/branch/master)
+[tracerer](https://github.com/ropensci/tracerer)|[![codecov.io](https://codecov.io/github/ropensci/tracerer/coverage.svg?branch=master)](https://app.codecov.io/github/ropensci/tracerer/branch/master)
 
 Package                                                                        | Status
 -------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
