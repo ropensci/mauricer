@@ -10,4 +10,5 @@
 ^CODE_OF_CONDUCT.md$
 ^CONTRIBUTING.md$
 ^Singularity$
+build_cran.sh
 

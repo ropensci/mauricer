@@ -162,7 +162,7 @@ Newest versions at top.
 
 ### MINOR IMPROVEMENTS
 
-  * Documentation at [rOpenSci](https://docs.ropensci.org/mauricer) to
+  * Documentation at [rOpenSci](https://docs.ropensci.org/mauricer/) to
     shows pictures
 
 ### BUG FIXES
