@@ -1,4 +1,5 @@
-name: check bash style
+# Check that there is correct markdown in all files
+name: Check markdown
 
 # Check links on the 16th day of the month.
 # 16th as the first letter of this repo is the 16th letter in the alphabet.
@@ -8,9 +9,8 @@ on:
   schedule:
   - cron: "0 0 16 * *"
 
-
 jobs:
-  check_bash_style:
+  check_markdown:
 
     runs-on: ubuntu-latest
     env:
@@ -20,5 +20,8 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Check bash scripts for style
-        run: shellcheck *.sh scripts/*.sh
+      - uses: articulate/actions-markdownlint@v1
+        with:
+          config: .markdownlint.jsonc
+          ignore: .markdownlintignore
+

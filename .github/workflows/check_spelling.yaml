@@ -1,4 +1,5 @@
-name: check bash style
+# Check that there is correct spelling in all files
+name: check spelling
 
 # Check links on the 16th day of the month.
 # 16th as the first letter of this repo is the 16th letter in the alphabet.
@@ -10,7 +11,7 @@ on:
 
 
 jobs:
-  check_bash_style:
+  check_spelling:
 
     runs-on: ubuntu-latest
     env:
@@ -20,5 +21,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Check bash scripts for style
-        run: shellcheck *.sh scripts/*.sh
+      - uses: igsekor/pyspelling-any@v1.0.4
+
+
+
