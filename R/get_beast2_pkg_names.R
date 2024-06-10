@@ -3,9 +3,9 @@
 #' List all BEAST2 packages that are available and installed.
 #' Will \link{stop} if there is no internet connection
 #' @inheritParams default_params_doc
-#' @return a data frame with columns\cr
+#' @return a data frame with columns
 #' \enumerate{
-#'   \item name package name, for example, code{bdmm}
+#'   \item name package name, for example, \code{bdmm}
 #'   \item installed_version the installed version, for example, \code{2.6.2}.
 #'     \code{installed_version} will be NA if the package is not installed
 #'   \item latest_version version number of the latest version, for example,
