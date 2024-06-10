@@ -2,357 +2,361 @@
 
 Newest versions at top.
 
+<!-- markdownlint-disable MD024 -->
+
 ## `mauricer` v2.5.4 (2024-06-05)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
- * Update email address of maintainer
+* Update email address of maintainer
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` v2.5.3 (2023-09-25)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
- * Use new CITATION style
- * Did `usethis::use_package_doc()`
+* Use new CITATION style
+* Did `usethis::use_package_doc()`
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` v2.5.2 (2022-08-11)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.5.1 (2021-05-29)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Creates no temporary files
+* Creates no temporary files
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.5 (2021-05-22)
 
 ### NEW FEATURES
 
-  * Use the GitHub Actions continuous integration service
+* Use the GitHub Actions continuous integration service
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * `install_beast2_pkg` and  `uninstall_beast2_pkg` are deprecated,
+* `install_beast2_pkg` and  `uninstall_beast2_pkg` are deprecated,
     as these violated CRAN policy.
     The deprecation message will point users to the non-official
-    `mauricerinstall` package at 
+    `mauricerinstall` package at
     `https://github.com/richelbilderbeek/mauricerinstall`
 
 ## `mauricer` 2.4 (2021-05-14)
 
 ### NEW FEATURES
 
-  * Use the GitHub Actions continuous integration service
+* Use the GitHub Actions continuous integration service
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.3 (2020-10-31)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * `install_beast2_pkg` and `uninstall_beast2_pkg` can be verbose
+* `install_beast2_pkg` and `uninstall_beast2_pkg` can be verbose
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.2 (2020-10-21)
 
 ### NEW FEATURES
 
-  * Can install BEAST2 packages when BEAST2 is installed at a custom location
+* Can install BEAST2 packages when BEAST2 is installed at a custom location
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.1 (2020-08-05)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Use https of BEAST2 website
-  * Builds on MacOS again
-  * `install_beast2_pkg` gives better error message when a 
+* Use https of BEAST2 website
+* Builds on MacOS again
+* `install_beast2_pkg` gives better error message when a
     non-existing/misspelled package is requested to be installed
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.6 (2020-01-06)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Documentation at [rOpenSci](https://docs.ropensci.org/mauricer/) to
+* Documentation at [rOpenSci](https://docs.ropensci.org/mauricer/) to
     shows pictures
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.5 (2019-12-02)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Add vignette
+* Add vignette
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.4 (2019-10-27)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Removed all deprecated functions; those starting with `mrc_`
-  * Added `is_beast2_ns_pkg_installed` that specifically checks if the BEAST
+* Removed all deprecated functions; those starting with `mrc_`
+* Added `is_beast2_ns_pkg_installed` that specifically checks if the BEAST
     NS package is installed, without needing an internet connection
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.3 (2019-06-03)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Depends on `beastier` being on CRAN
+* Depends on `beastier` being on CRAN
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.2 (2019-03-27)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Builds with and without BEAST2 installed
+* Builds with and without BEAST2 installed
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0.1 (2019-01-04)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Processed CRAN feedback on `beastier` on this repo 
+* Processed CRAN feedback on `beastier` on this repo
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 2.0 (2019-01-04)
 
 ### NEW FEATURES
 
-  * Transferred ownership to `ropensci`
+* Transferred ownership to `ropensci`
 
 ### MINOR IMPROVEMENTS
 
-  * Use more readable function names
+* Use more readable function names
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 1.2 (2018-10-26)
 
 ### NEW FEATURES
 
-  * None
+* None
 
 ### MINOR IMPROVEMENTS
 
-  * Tested to work on macOS
-  * Improved DESCRIPTION
-  * Improved function names
+* Tested to work on macOS
+* Improved DESCRIPTION
+* Improved function names
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 1.1.0 (2018-10-20)
 
 ### NEW FEATURES
 
-  * Works on Windows
+* Works on Windows
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
 
 ## `mauricer` 1.0.0 (2018-09-11)
 
 ### NEW FEATURES
 
-  * First version
+* First version
 
 ### MINOR IMPROVEMENTS
 
-  * None
+* None
 
 ### BUG FIXES
 
-  * None
+* None
 
 ### DEPRECATED AND DEFUNCT
 
-  * None
+* None
+
+<!-- markdownlint-enable MD024 -->
