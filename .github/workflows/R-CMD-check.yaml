@@ -33,6 +33,9 @@ jobs:
       - name: Install libharfbuzz-dev libfribidi-dev
         run: sudo apt install -qq libharfbuzz-dev libfribidi-dev
 
+      - name: Install libglpk-dev for igraph
+        run: sudo apt-get install libglpk-dev
+
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
