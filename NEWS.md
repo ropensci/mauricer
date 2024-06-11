@@ -4,7 +4,26 @@ Newest versions at top.
 
 <!-- markdownlint-disable MD024 -->
 
-## `mauricer` v2.5.4 (2024-06-05)
+## `mauricer` v2.5.5 (unreleased)
+
+### NEW FEATURES
+
+* None
+
+### MINOR IMPROVEMENTS
+
+* None
+
+### BUG FIXES
+
+* None
+
+### DEPRECATED AND DEFUNCT
+
+* None
+
+
+## `mauricer` v2.5.4 (2024-06-10)
 
 ### NEW FEATURES
 
