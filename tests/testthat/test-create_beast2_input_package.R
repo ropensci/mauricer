@@ -4,7 +4,7 @@ test_that("NS, deep", {
   if (!curl::has_internet()) return()
   if (!is_beast2_ns_pkg_installed()) return()
 
-  output_filename <- get_beastier_tempfilename()
+  output_filename <- beastier::get_beastier_tempfilename()
 
   beautier::create_beast2_input_file_from_model(
     input_filename = beautier::get_beautier_path("anthus_aco_sub.fas"),
