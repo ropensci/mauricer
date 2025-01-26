@@ -4,7 +4,15 @@ name: check links
 # 16th as the first letter of this repo is the 16th letter in the alphabet.
 on:
   push:
+    paths:
+      - 'docs/**'
+      - .github/workflows/check_links.yaml
+      - mlc_config.json
   pull_request:
+    paths:
+      - 'docs/**'
+      - .github/workflows/check_links.yaml
+      - mlc_config.json
   schedule:
   - cron: "0 0 16 * *"
 
