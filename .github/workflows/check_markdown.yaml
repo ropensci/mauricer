@@ -1,5 +1,5 @@
-# Check that there is correct markdown in all files
-name: Check markdown
+# Check that there is correct Markdown in all files
+name: Check Markdown
 
 # Check links on the 16th day of the month.
 # 16th as the first letter of this repo is the 16th letter in the alphabet.
